@@ -23,11 +23,6 @@
         .dropdown-menu {
             @apply bg-white;
         }
-        .nav-menu {
-            @apply flex flex-wrap items-center justify-between
-                md:justify-center
-                lg:items-end lg:flex-nowrap;
-        }
         .dropdown {
             @apply relative cursor-pointer;
         }
@@ -37,10 +32,15 @@
             font-family: var(--sans-uni);
         }
         /* Navbar Items */
+        .nav-item {
+            @apply w-full
+                lg:w-auto;
+        }
         .nav-item > a {
-            @apply hidden px-4 pt-4 pb-2 border-b-[3px] border-b-transparent font-semibold
+            @apply hidden px-4 pt-4 pb-2 border-b-[3px] border-b-transparent font-semibold text-center
                 lg:inline-block;
         }
+        .nav-menu.active .nav-item > a,
         .nav-menu.active .nav-item > a {
             display: block!important;
         }
@@ -49,60 +49,46 @@
             @apply text-[color:var(--green)] border-b-[color:var(--green)];
         }
         /* Dropdown Items */
+        .dropdown {
+            @apply relative;
+        }
         .dropdown > a::after {
             @apply inline-block ml-2 text-xs font-bold;
             content: "\f107";
             font-family: "Font Awesome 5 Free";
         }
         .dropdown-menu {
-            @apply hidden border-[1px] border-slate-200;
+            @apply hidden border-[1px] border-slate-200
+                lg:absolute lg:top-full lg:right-0 lg:w-[200%];
+        }
+        .dropdown.active > a {
+            @apply text-[color:var(--green)] border-b-[color:var(--green)];
         }
         .dropdown.active .dropdown-menu {
             @apply block;
         }
+        .dropdown:hover .dropdown-menu {
+            @apply lg:block;
+        }
         .dropdown-item > a {
-            @apply block p-4 border-[color:var(--green)];
+            @apply block p-4
+                hover:border-l-[4px] hover:border-l-[color:var(--green)] hover:text-[color:var(--green)] font-semibold;
         }
         /* Navbar Item: Logo */
         .nav-logo {
-            @apply md:flex-1;
-        }
-        .nav-logo > a {
-            @apply block p-2;
+            @apply mr-auto;
         }
         .nav-logo img {
-            @apply h-[50px]
-                md:h-[75px]
-                lg:h-[100px];
-        }
-        /* Navbar Item */
-        .nav-item {
-            @apply order-[3] w-full text-center
-                lg:w-auto;
+            @apply h-[75px] m-2;
         }
         /* Navbar Item: Contact Us Button */
         .nav-button {
-            @apply order-[3] w-full text-center
-                md:order-[2] md:w-auto
-                lg:order-[3];
-        }
-        .nav-button > a {
-            @apply hidden px-4 pt-4 pb-2 border-b-[3px] border-b-transparent font-semibold
-                hover:text-[color:var(--green)] hover:border-b-[color:var(--green)]
-                md:inline-block md:px-6 md:p-4 md:border-0 md:bg-[color:var(--green)] md:rounded-full md:text-white md:uppercase md:font-bold
-                hover:md:text-white hover:md:border-b-transparent
-                lg:px-4 lg:pt-4 lg:pb-2 lg:bg-transparent lg:border-b-[3px] lg:border-b-transparent lg:rounded-none lg:text-black lg:normal-case lg:font-semibold
-                lg:hover:text-[color:var(--green)] lg:hover:border-b-[color:var(--green)];
-        }
-        .nav-menu.active .nav-button > a {
-            @apply block md:inline-block;
+            @apply hidden px-6 py-4 bg-[color:var(--green)] rounded-full text-white font-bold
+                md:block lg:hidden;
         }
         /* Navbar Item: Menu Toggle */
-        .nav-toggle {
-            @apply order-[2];
-        }
         .nav-toggle a {
-            @apply block px-4 py-6 font-semibold
+            @apply h-full flex items-center px-6 py-4 text-2xl font-semibold
                 md:px-6
                 lg:hidden;
         }
