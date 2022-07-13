@@ -11,21 +11,45 @@ function toggleMenu() {
         toggle.querySelector("a").innerHTML = "<i class='fa-solid fa-times'></i>";
     }
 }
-function toggleItem() {
-    if (this.classList.contains("active")) {
-        this.classList.remove("active");
-    } else if (menu.querySelector(".dropdown.active")) {
-        menu.querySelector(".dropdown.active").classList.remove("active");
-        this.classList.add("active");
-    } else {
-        this.classList.add("active");
+function toggleItem(e) {
+    console.log(e.type);
+    if (
+        e.type != "mouseover" ||
+        (e.type == "mouseover" && screen.width >=1024)
+    ) {
+        if (this.classList.contains("active")) {
+            this.classList.remove("active");
+        } else if (menu.querySelector(".dropdown.active")) {
+            menu.querySelector(".dropdown.active").classList.remove("active");
+            this.classList.add("active");
+        } else {
+            this.classList.add("active");
+        }
     }
 }
+function closeSubmenu(e) {
+    if (menu.querySelector(".dropdown.active")) {
+      let isClickInside = menu
+        .querySelector(".dropdown.active")
+        .contains(e.target);
+   
+      if (!isClickInside && menu.querySelector(".dropdown.active")) {
+        menu.querySelector(".dropdown.active").classList.remove("active");
+      }
+    }
+  }
 
+document.addEventListener("click", closeSubmenu, false);
+window.addEventListener("resize", function() {
+    if (menu.querySelector(".dropdown.active")) {
+        menu.querySelector(".dropdown.active").classList.remove("active");
+    }
+}, false);
 toggle.addEventListener("click", toggleMenu, false);
 for (let item of items) {
     if (item.querySelector(".dropdown-menu")) {
         item.addEventListener("click", toggleItem, false);
+        item.addEventListener("mouseover", toggleItem, false);
         item.addEventListener("keypress", toggleItem, false);
     }
 }
