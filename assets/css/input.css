@@ -6,16 +6,21 @@
 body {
   @apply
   bg-primary-gray
+  h-full
 }
 
 .personal-info {
   @apply
   px-3
   py-2
-  /* border */
+  border
+  border-primary-green
+  shadow-inner
+  shadow-slate-400
   outline-none
   outline-offset-0
   focus:outline-green-500
+  rounded
 }
 
 
