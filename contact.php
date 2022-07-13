@@ -33,7 +33,7 @@
         <input class="personal-info" placeholder="Phone Number" type="text" name="phone">
         <textarea class="personal-info  resize-none col-span-2"  placeholder="Message:" name="message" rows="3"></textarea>
         <!-- <button class="btn glass" type="submit" name="submit">Submit</button> -->
-        <button class="transition duration-150 py-2 px-8 w-fit text-white font-medium border border-white hover:bg-primary-green-darker " type="submit" name="submit">Submit</button>
+        <button class="transition duration-150 py-2 px-8 w-fit text-white font-medium border border-white hover:bg-white hover:text-primary-green" type="submit" name="submit">Submit</button>
       </form>
     </div>
 

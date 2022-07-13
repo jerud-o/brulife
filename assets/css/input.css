@@ -14,13 +14,12 @@ body {
   px-3
   py-2
   border
-  border-primary-green
+  border-slate-400
   shadow-inner
   shadow-slate-400
   outline-none
   outline-offset-0
-  focus:outline-green-500
-  rounded
+  focus:border-slate-600
 }
 
 

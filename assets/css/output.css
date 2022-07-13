@@ -2236,6 +2236,14 @@ html {
   background-color: hsl(var(--b3, var(--b2)) / var(--tw-bg-opacity));
 }
 
+.table tr.hover:hover th, 
+    .table tr.hover:hover td, 
+    .table tr.hover:nth-child(even):hover th, 
+    .table tr.hover:nth-child(even):hover td {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--b3, var(--b2)) / var(--tw-bg-opacity));
+}
+
 .textarea:focus {
   outline: 2px solid hsla(var(--bc) / 0.2);
   outline-offset: 2px;
@@ -2377,10 +2385,6 @@ html {
   float: left;
 }
 
-.m-14 {
-  margin: 3.5rem;
-}
-
 .m-10 {
   margin: 2.5rem;
 }
@@ -2389,13 +2393,13 @@ html {
   margin: auto;
 }
 
-.m-0 {
-  margin: 0px;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mt-0 {
+  margin-top: 0px;
 }
 
 .mt-6 {
@@ -2408,10 +2412,6 @@ html {
 
 .mb-4 {
   margin-bottom: 1rem;
-}
-
-.mt-0 {
-  margin-top: 0px;
 }
 
 .inline-block {
@@ -2693,10 +2693,9 @@ body {
 }
 
 .personal-info {
-  border-radius: 0.25rem;
   border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: hsl(137 98% 26% / var(--tw-border-opacity));
+  border-color: rgb(148 163 184 / var(--tw-border-opacity));
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-top: 0.5rem;
@@ -2711,7 +2710,8 @@ body {
 }
 
 .personal-info:focus {
-  outline-color: #22c55e;
+  --tw-border-opacity: 1;
+  border-color: rgb(71 85 105 / var(--tw-border-opacity));
 }
 
 .hover\:bg-primary-green-darker:hover {
@@ -2724,9 +2724,24 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-primary-green:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(137 98% 26% / var(--tw-bg-opacity));
+}
+
 .hover\:text-green-600:hover {
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-primary-green:hover {
+  --tw-text-opacity: 1;
+  color: hsl(137 98% 26% / var(--tw-text-opacity));
 }
 
 .hover\:no-underline:hover {
@@ -2750,22 +2765,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .md\:m-0 {
-    margin: 0px;
-  }
-
-  .md\:m-14 {
-    margin: 3.5rem;
-  }
-
-  .md\:mt-4 {
-    margin-top: 1rem;
-  }
-
-  .md\:mt-0 {
-    margin-top: 0px;
-  }
-
   .md\:mt-14 {
     margin-top: 3.5rem;
   }
