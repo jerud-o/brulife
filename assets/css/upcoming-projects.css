@@ -1,0 +1,332 @@
+* {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.filter-list-custom {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.filter-list-custom li {
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
+}
+
+.filter-list-custom li:hover {
+    color: #018427;
+    transform: scale(1.2);
+    border-bottom: 2px solid #018427;
+}
+
+.filter-list-custom li:active {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+.card-flex-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-custom {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    margin: 20px;
+    width: 90%;
+    border-radius: 25px;
+}
+
+.card-custom-img {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.card-custom-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+    border-radius: 25px 25px 0 0;
+}
+
+.card-custom-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+    padding: 10px;
+}
+
+.card-custom-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.custom-card-content p {
+    font-size: 15px;
+}
+
+.btn-custom {
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: 2px solid #018427;
+    border-radius: 10px;
+    color: #018427;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-custom:hover {
+    color: white;
+    background-color: #018427;
+}
+
+.btn-custom:active {
+    transform: scale(0.9);
+}
+
+.btn-custom::after {
+    content: "\f101";
+    font-family: "font awesome 5 free";
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {
+
+    * {
+        font-family: 'Fira Sans', sans-serif;
+    }
+
+    .filter-list-custom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .filter-list-custom li {
+        padding: 5px;
+        transition: all 0.3s ease-in-out;
+        border-bottom: 2px solid transparent;
+    }
+
+    .filter-list-custom li:hover {
+        color: #018427;
+        transform: scale(1.2);
+        border-bottom: 2px solid #018427;
+    }
+
+    .filter-list-custom li:active {
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+    }
+
+    .card-flex-custom {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card-custom {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.5s;
+        margin: 20px;
+        width: 25%;
+        border-radius: 25px;
+    }
+
+    .card-custom:hover {
+        transform: scale(1.1);
+    }
+
+    .card-custom-img {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+    }
+
+    .card-custom-img img {
+        width: 100%;
+        height: 200px;
+        object-fit: fill;
+        border-radius: 25px 25px 0 0;
+    }
+
+    .card-custom-content {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 0 0 25px 25px;
+        padding: 10px;
+    }
+
+    .card-custom-content h3 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .custom-card-content p {
+        font-size: 15px;
+    }
+
+    .btn-custom {
+        display: flex;
+        margin: auto;
+        margin-top: auto;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        border: 2px solid #018427;
+        border-radius: 10px;
+        color: #018427;
+        font-size: 15px;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    .btn-custom:hover {
+        color: white;
+        background-color: #018427;
+    }
+
+    .btn-custom:active {
+        transform: scale(0.9);
+    }
+
+    .btn-custom::after {
+        content: "\f101";
+        font-family: "font awesome 5 free";
+        font-weight: bold;
+        margin-left: 3px;
+    }
+
+}
+
+/* @media screen and (min-width: 1280px) {
+
+    * {
+        font-family: 'Fira Sans', sans-serif;
+    }
+
+    .filter-list-custom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .filter-list-custom li {
+        padding: 5px;
+        transition: all 0.3s ease-in-out;
+        border-bottom: 2px solid transparent;
+    }
+
+    .filter-list-custom li:hover {
+        color: #018427;
+        transform: scale(1.2);
+        border-bottom: 2px solid #018427;
+    }
+
+    .filter-list-custom li:active {
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+    }
+
+    .card-flex-custom {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card-custom {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.5s;
+        margin: 20px;
+        width: 25%;
+        border-radius: 25px;
+    }
+
+    .card-custom:hover {
+        transform: scale(1.1);
+    }
+
+    .card-custom-img {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+    }
+
+    .card-custom-img img {
+        width: 100%;
+        height: 200px;
+        object-fit: fill;
+        border-radius: 25px 25px 0 0;
+    }
+
+    .card-custom-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 0 0 25px 25px;
+        padding: 10px;
+    }
+
+    .card-custom-content h3 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .custom-card-content p {
+        font-size: 15px;
+    }
+
+    .btn-custom {
+        display: flex;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        border: 2px solid #018427;
+        border-radius: 10px;
+        color: #018427;
+        font-size: 15px;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+
+    .btn-custom:hover {
+        color: white;
+        background-color: #018427;
+    }
+
+    .btn-custom:active {
+        transform: scale(0.9);
+    }
+
+    .btn-custom::after {
+        content: "\f101";
+        font-family: "font awesome 5 free";
+        font-weight: bold;
+        margin-left: 3px;
+    }
+
+} */
