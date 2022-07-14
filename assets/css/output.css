@@ -2572,6 +2572,22 @@ html {
   overflow: hidden;
 }
 
+.rounded-\[3px\] {
+  border-radius: 3px;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.border-8 {
+  border-width: 8px;
+}
+
 .border {
   border-width: 1px;
 }
@@ -2582,6 +2598,15 @@ html {
 
 .border-0 {
   border-width: 0px;
+}
+
+.border-\[16px\] {
+  border-width: 16px;
+}
+
+.border-slate-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
 }
 
 .border-white {

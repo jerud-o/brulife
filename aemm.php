@@ -9,7 +9,7 @@
     </div>
 
     <div class="">
-      <img class="mx-auto" src="assets/img/aemm.jpg">
+      <img class="mx-auto border-slate-300 rounded-md border-[16px]" src="assets/img/aemm.jpg">
     </div>
   </div>
   <div class="text-white w-4/5 flex flex-shrink-0 justify-center gap-12 p-12 mx-auto bg-primary-green">
