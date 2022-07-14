@@ -2406,21 +2406,17 @@ html {
   margin-right: auto;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .mb-4 {
   margin-bottom: 1rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
-.mt-0 {
-  margin-top: 0px;
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .mt-6 {
@@ -2431,16 +2427,12 @@ html {
   margin-left: 1rem;
 }
 
-.ml-20 {
-  margin-left: 5rem;
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
-.ml-12 {
-  margin-left: 3rem;
-}
-
-.mb-12 {
-  margin-bottom: 3rem;
+.mt-0 {
+  margin-top: 0px;
 }
 
 .inline-block {
@@ -2455,12 +2447,12 @@ html {
   display: grid;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-6 {
   height: 1.5rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .h-\[70vh\] {
@@ -2471,6 +2463,14 @@ html {
   height: 50vh;
 }
 
+.w-4\/5 {
+  width: 80%;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -2479,8 +2479,8 @@ html {
   width: 66.666667%;
 }
 
-.w-6 {
-  width: 1.5rem;
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-fit {
@@ -2493,16 +2493,16 @@ html {
   width: 80%;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .max-w-screen-lg {
   max-width: 1024px;
 }
 
 .flex-shrink-0 {
   flex-shrink: 0;
+}
+
+.basis-1\/4 {
+  flex-basis: 25%;
 }
 
 .basis-1\/2 {
@@ -2519,15 +2519,13 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.-scale-100 {
-  --tw-scale-x: -1;
-  --tw-scale-y: -1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .-scale-x-100 {
   --tw-scale-x: -1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .resize-none {
@@ -2556,6 +2554,10 @@ html {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-4 {
@@ -2592,6 +2594,10 @@ html {
   background-color: hsl(137 98% 26% / var(--tw-bg-opacity));
 }
 
+.bg-\[rgba\(200\2c 200\2c 200\2c \.0\)\] {
+  background-color: rgba(200,200,200,.0);
+}
+
 .bg-\[color\:var\(--red\)\] {
   background-color: var(--red);
 }
@@ -2611,46 +2617,6 @@ html {
   background-color: rgb(134 239 172 / var(--tw-bg-opacity));
 }
 
-.bg-\[rgba\(0\2c 0\2c 0\2c \.5\)\] {
-  background-color: rgba(0,0,0,.5);
-}
-
-.bg-\[rgba\(100\2c 0\2c 0\2c \.5\)\] {
-  background-color: rgba(100,0,0,.5);
-}
-
-.bg-\[rgba\(100\2c 100\2c 0\2c \.5\)\] {
-  background-color: rgba(100,100,0,.5);
-}
-
-.bg-\[rgba\(100\2c 100\2c 100\2c \.5\)\] {
-  background-color: rgba(100,100,100,.5);
-}
-
-.bg-\[rgba\(100\2c 100\2c 200\2c \.5\)\] {
-  background-color: rgba(100,100,200,.5);
-}
-
-.bg-\[rgba\(100\2c 200\2c 200\2c \.5\)\] {
-  background-color: rgba(100,200,200,.5);
-}
-
-.bg-\[rgba\(200\2c 200\2c 200\2c \.5\)\] {
-  background-color: rgba(200,200,200,.5);
-}
-
-.bg-\[rgba\(200\2c 200\2c 200\2c \.3\)\] {
-  background-color: rgba(200,200,200,.3);
-}
-
-.bg-\[rgba\(200\2c 200\2c 200\2c \.0\)\] {
-  background-color: rgba(200,200,200,.0);
-}
-
-.bg-\[rgba\(200\2c 200\2c 200\2c \.4\)\] {
-  background-color: rgba(200,200,200,.4);
-}
-
 .bg-\[url\(assets\/img\/career-bg\.jpg\)\] {
   background-image: url(assets/img/career-bg.jpg);
 }
@@ -2661,6 +2627,10 @@ html {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.p-12 {
+  padding: 3rem;
 }
 
 .p-4 {
@@ -2675,12 +2645,14 @@ html {
   padding: 2rem;
 }
 
-.p-12 {
-  padding: 3rem;
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-.p-10 {
-  padding: 2.5rem;
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .px-12 {
@@ -2688,19 +2660,14 @@ html {
   padding-right: 3rem;
 }
 
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .py-2 {
@@ -2716,16 +2683,6 @@ html {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
 }
 
 .pt-10 {
@@ -2744,20 +2701,8 @@ html {
   padding-top: 4rem;
 }
 
-.pr-12 {
-  padding-right: 3rem;
-}
-
-.text-left {
-  text-align: left;
-}
-
 .text-center {
   text-align: center;
-}
-
-.indent-6 {
-  text-indent: 1.5rem;
 }
 
 .indent-10 {
@@ -2776,6 +2721,16 @@ html {
   font-family: 'Alegreya Sans';
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -2791,22 +2746,12 @@ html {
   line-height: 2.5rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.font-medium {
+  font-weight: 500;
 }
 
 .font-bold {
   font-weight: 700;
-}
-
-.font-medium {
-  font-weight: 500;
 }
 
 .font-semibold {
@@ -2831,19 +2776,9 @@ html {
   color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
-.blur-md {
-  --tw-blur: blur(12px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.blur-\[\] {
-  --tw-blur: blur();
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.blur-\[8\] {
-  --tw-blur: blur(8);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .blur-\[8px\] {
@@ -2867,14 +2802,11 @@ html {
   transition-duration: 100ms;
 }
 
+/* Contact */
+
 body {
-  height: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(224 224 224 / var(--tw-bg-opacity));
-}
-
-.career {
-  background-color: transparent;
 }
 
 .personal-info {
@@ -2897,6 +2829,27 @@ body {
 .personal-info:focus {
   --tw-border-opacity: 1;
   border-color: rgb(71 85 105 / var(--tw-border-opacity));
+}
+
+/* Careers */
+
+.career {
+  background-color: transparent;
+}
+
+/* Partners - AEMM */
+
+.contact,  .about {
+  width: 50%;
+}
+
+.paragraph {
+  text-indent: 2.5rem;
+}
+
+.sub-header {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .hover\:bg-white:hover {
@@ -2943,8 +2896,6 @@ body {
     flex-direction: row;
   }
 }
-
-
 
 
 
