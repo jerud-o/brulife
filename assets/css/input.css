@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Contact */
 
 body {
   @apply
   bg-primary-gray
-  h-full
 }
 
 .personal-info {
@@ -14,16 +14,38 @@ body {
   px-3
   py-2
   border
-  border-primary-green
+  border-slate-400
   shadow-inner
-  shadow-slate-400
+  shadow-slate-200
   outline-none
   outline-offset-0
-  focus:outline-green-500
-  rounded
+  focus:border-slate-600
 }
 
+/* Careers */
 
+.career {
+  @apply
+  bg-transparent
+  /* bg-[#bcbcbc62] */
+}
+
+/* Partners - AEMM */
+
+.contact, .about {
+  @apply
+  w-1/2
+}
+
+.paragraph {
+  @apply
+  indent-10
+}
+
+.sub-header {
+  @apply
+  text-3xl
+}
 
 
 

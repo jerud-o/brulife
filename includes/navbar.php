@@ -1,12 +1,20 @@
 </head>
 <body>
-    <nav class="w-full sticky top-0 border-b-[1px] bg-white border-b-slate-200 z-10">
-        <ul class="nav-menu">
-            <li class="nav-logo">
-                <a href="#">
-                    <img src="./assets/img/logo-banner.png" alt="BRU Life Logo Banner">
-                </a>
-            </li>
+    <nav class="h-[100px] w-full flex relative items-center justify-between fixed top-0 border-b-[1px] bg-white border-b-slate-200 z-10">
+        <div class="nav-logo">
+            <a href="#">
+                <img src="./assets/img/logo-banner.png" alt="BRU Life Logo Banner">
+            </a>
+        </div>
+        <div class="nav-button">
+            <a href="#">CONTACT US</a>
+        </div>
+        <div class="nav-toggle h-full">
+            <a href="#">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+        <ul class="nav-menu w-full block absolute top-full lg:h-full lg:w-auto lg:flex lg:flex-wrap-reverse lg:items-start lg:justify-end lg:static">
             <li class="nav-item"><a href="#">Home</a></li>
             <li class="nav-item"><a href="#">Projects</a></li>
             <li class="nav-item dropdown">
@@ -28,7 +36,8 @@
                     <li class="dropdown-item"><a href="#">The Directors</a></li>
                 </ul>
             </li>
-            <li class="nav-button"><a href="#">Contact Us</a></li>
-            <li class="nav-toggle"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            <li class="nav-item button">
+                <a href="#">Contact Us</a>
+            </li>
         </ul>
     </nav>

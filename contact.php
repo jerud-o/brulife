@@ -27,13 +27,13 @@
     <div>
     <h3 class="text-xl text-white font-medium">Contact Us</h3>
       <form class="mt-6 grid grid-cols-2 gap-2 pr-8" action="contact.php" method="POST">
-        <input class="personal-info" placeholder="First Name" type="text" name="firstname">
-        <input class="personal-info" placeholder="Last Name" type="text" name="lastname">
-        <input class="personal-info" placeholder="E-mail" type="email" name="email">
-        <input class="personal-info" placeholder="Phone Number" type="text" name="phone">
+        <input autocomplete="off" class="personal-info" placeholder="First Name" type="text" name="firstname">
+        <input autocomplete="off" class="personal-info" placeholder="Last Name" type="text" name="lastname">
+        <input autocomplete="off" class="personal-info" placeholder="E-mail" type="email" name="email">
+        <input autocomplete="off" class="personal-info" placeholder="Phone Number" type="text" name="phone">
         <textarea class="personal-info  resize-none col-span-2"  placeholder="Message:" name="message" rows="3"></textarea>
         <!-- <button class="btn glass" type="submit" name="submit">Submit</button> -->
-        <button class="transition duration-150 py-2 px-8 w-fit text-white font-medium border border-white hover:bg-primary-green-darker " type="submit" name="submit">Submit</button>
+        <button class="transition duration-150 py-2 px-8 w-fit text-white font-medium border border-white hover:bg-white hover:text-primary-green" type="submit" name="submit">Submit</button>
       </form>
     </div>
 
