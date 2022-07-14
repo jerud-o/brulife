@@ -1,4 +1,4 @@
-* {
+/* * {
     font-family: 'Fira Sans', sans-serif;
 }
 
@@ -218,7 +218,7 @@
 
 }
 
-/* @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
 
     * {
         font-family: 'Fira Sans', sans-serif;
@@ -330,3 +330,88 @@
     }
 
 } */
+
+
+
+/* ############################################### DEMO CARDS ######################################### */
+
+
+.filter-list-custom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.filter-list-custom li {
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
+}
+
+.filter-list-custom li:hover {
+    color: #018427;
+    transform: scale(1.2);
+    border-bottom: 2px solid #018427;
+}
+
+.filter-list-custom li:active {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+.card-flex-custom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-custom {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    height: 250px;
+    border: 2px solid black;
+    margin: 20px;
+}
+
+.card-img-custom {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.card-img-custom img {
+    width: 300px;
+    height: 100%;
+    object-fit: fill;
+}
+
+.card-content-custom {
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.card-content-custom h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-content-custom p {
+    padding: 15px 0;
+    font-size: 15px;
+}
+
+.btn-custom {
+    padding: 5px;
+    border: 2px solid black;
+    transition: all 0.3s ease-in-out;
+    top: 70%;
+    left: 60%;
+}
+
+.btn-custom:hover {
+    background-color: #d4d4d4;
+}
