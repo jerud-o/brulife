@@ -12,7 +12,6 @@ function toggleMenu() {
     }
 }
 function toggleItem(e) {
-    console.log(e.type);
     if (
         e.type != "mouseover" ||
         (e.type == "mouseover" && screen.width >=1024)
@@ -40,6 +39,7 @@ function closeSubmenu(e) {
   }
 
 document.addEventListener("click", closeSubmenu, false);
+document.addEventListener("mouseover", closeSubmenu, false);
 window.addEventListener("resize", function() {
     if (menu.querySelector(".dropdown.active")) {
         menu.querySelector(".dropdown.active").classList.remove("active");

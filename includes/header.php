@@ -42,7 +42,7 @@
         }
         .nav-menu.active .nav-item > a,
         .nav-menu.active .nav-item > a {
-            display: block!important;
+            @apply block;
         }
         .nav-item > a:hover,
         .dropdown:hover > a {
@@ -74,17 +74,23 @@
             @apply block p-4
                 hover:border-l-[4px] hover:border-l-[color:var(--green)] hover:text-[color:var(--green)] font-semibold;
         }
+        .dropdown-item:not(:last-of-type) > a {
+            @apply border-b-[1px] border-b-slate-200;
+        }
         /* Navbar Item: Logo */
         .nav-logo {
             @apply mr-auto;
         }
         .nav-logo img {
-            @apply h-[75px] m-2;
+            @apply h-[70px] m-2;
         }
         /* Navbar Item: Contact Us Button */
         .nav-button {
             @apply hidden px-6 py-4 bg-[color:var(--green)] rounded-full text-white font-bold
-                md:block lg:hidden;
+                sm:block lg:hidden;
+        }
+        .nav-item.button {
+            @apply sm:hidden lg:inline-block;
         }
         /* Navbar Item: Menu Toggle */
         .nav-toggle a {
