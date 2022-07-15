@@ -82,7 +82,7 @@
             @apply mr-auto;
         }
         .nav-logo img {
-            @apply h-[70px] m-2;
+            @apply h-[80px] m-2;
         }
         /* Navbar Item: Contact Us Button */
         .nav-button {

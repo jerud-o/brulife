@@ -1,6 +1,6 @@
 </head>
 <body>
-    <nav class="h-[80px] w-full flex relative items-center justify-between fixed top-0 border-b-[1px] bg-white border-b-slate-200 z-10">
+    <nav class="h-[100px] w-full flex relative items-center justify-between fixed top-0 border-b-[1px] bg-white border-b-slate-200 z-10">
         <div class="nav-logo">
             <a href="#">
                 <img src="./assets/img/logo-banner.png" alt="BRU Life Logo Banner">
@@ -20,6 +20,7 @@
             <li class="nav-item dropdown">
                 <a tabindex="0">Partners</a>
                 <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="#">Arvin Construction</a></li>
                     <li class="dropdown-item"><a href="#">Divine Medical</a></li>
                     <li class="dropdown-item"><a href="#">Graymark</a></li>
                     <li class="dropdown-item"><a href="#">Jaru Farm</a></li>
