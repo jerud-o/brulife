@@ -1,8 +1,5 @@
 <?php require_once "includes/header.php"; ?>
 <?php require_once "includes/navbar.php"; ?>
-</head>
-
-<body>
   <div class="flex items-center justify-center p-12 gap-12 bg-primary-green mx-auto my-12">
     <div class="basis-1/4 text-6xl">
       <h1 class="text-white">BRU Consumer Goods Trading</h1>
@@ -12,12 +9,12 @@
       <img class="mx-auto border-slate-300 rounded-md border-[16px]" src="assets/img/brucgt.jpg">
     </div>
   </div>
-  <div class="text-white w-4/5 flex flex-shrink-0 justify-center gap-12 p-12 mx-auto bg-primary-green">
+  <div class="partners-about">
     <!-- About Company -->
     <div class="about">
       <h1 class="text-4xl font-medium mb-4">About Us</h1>
       <div class="section mb-4">
-        <h1 class="sub-header font-medium mb-4">Who Are We</h1>
+        <h1 class="sub-header font-medium mb-2">Who we are</h1>
         <p class="paragraph">BRU Consumer Goods Trading provides best credentials for wants, needs, and supplying demand into one place that gives consumer satisfaction.</p>
       </div>
 

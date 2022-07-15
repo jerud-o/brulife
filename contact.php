@@ -1,8 +1,5 @@
 <?php require_once "includes/header.php"; ?>
 <?php require_once "includes/navbar.php"; ?>
-</head>
-
-<body>
   <div class="mt-0 py-20 bg-primary-green p-4 px-20 flex flex-col gap-4 md:flex-row md:mt-14 max-w-screen-lg mx-auto">
     <div class="basis-1/2">
       <h3 class="text-xl text-white font-medium">Contact Information</h3>

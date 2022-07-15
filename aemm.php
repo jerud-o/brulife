@@ -1,9 +1,6 @@
 <?php require_once "includes/header.php"; ?>
 <?php require_once "includes/navbar.php"; ?>
-</head>
-
-<body>
-  <div class="flex items-center justify-center gap-12 py-12 bg-primary-green mx-auto my-12">
+  <div class="partners-about">
     <div class="basis-1/4 text-6xl">
       <h1 class="text-white">AEMM GENCON ENGINEERING SERVICES</h1>
     </div>

@@ -8,7 +8,7 @@
       <h1 class=" text-5xl font-bold">About</h1>
    </div>
    <div>
-   
+      
    </div>
 </div>
 <?php

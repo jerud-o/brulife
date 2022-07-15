@@ -27,9 +27,21 @@ body {
 .career {
   @apply
   bg-transparent
-  /* bg-[#bcbcbc62] */
 }
 
+/*************PARTNERS**************/
+.partners-about {
+  @apply
+  text-white
+  w-4/5
+  flex
+  flex-shrink-0
+  justify-center
+  gap-12
+  p-12
+  mx-auto
+  bg-primary-green
+}
 /* Partners - AEMM */
 
 .contact, .about {
@@ -46,6 +58,10 @@ body {
   @apply
   text-2xl
 }
+
+
+/* Partners - ACI */
+
 
 
 

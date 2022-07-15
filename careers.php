@@ -1,10 +1,7 @@
 <?php require_once "includes/header.php"; ?>
 <?php require_once "includes/navbar.php"; ?>
-</head>
-
-<body class="career">
-  <div class="-scale-x-100 bg-[url(assets/img/career-bg.jpg)] bg-cover bg-no-repeat blur-[8px] h-full absolute w-full z-[-1] top-20"></div>
-  <div class="w-2/3 py-8 px-12 mx-auto bg-[rgba(200,200,200,.0)]">
+<div class="-scale-x-100 bg-[url(assets/img/career-bg.jpg)] bg-cover bg-no-repeat blur-[8px] h-full absolute w-full z-[-1] top-20"></div>
+<div class="w-2/3 py-8 px-12 mx-auto bg-[rgba(200,200,200,.0)]">
     <h1 class="text-center text-5xl font-bold mb-4">Welcome to Our Career Center</h1>
     <p class="text-center font-medium indent-10">On this page you will find information and resources about working at Brulife. There are exciting job opportunities and if you are looking for additional insights about our job functions, want to get to know the people of Brulife and out culture, or to get professional insights on your career, check out our Careers blog page for more.</p>
   </div>
@@ -30,7 +27,7 @@
         <li class="text-white">➤ Real Estate</li>
       </ul>
     </div>
-
+    
   </div>
   
   <?php
@@ -38,5 +35,6 @@
   require_once "includes/scripts.php";
   ?>
 </body>
+<script>document.body.style.backgroundColor ="transparent";</script>
 
 </html>
