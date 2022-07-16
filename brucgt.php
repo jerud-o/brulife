@@ -9,7 +9,7 @@
       <img class="mx-auto border-slate-300 rounded-md border-[16px]" src="assets/img/brucgt.jpg">
     </div>
   </div>
-  <div class="partners-about">
+  <div class="text-white w-4/5 flex flex-shrink-0 justify-center gap-12 p-12 mx-auto bg-primary-green">
     <!-- About Company -->
     <div class="about">
       <h1 class="text-4xl font-medium mb-4">About Us</h1>

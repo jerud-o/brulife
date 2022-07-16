@@ -30,18 +30,7 @@ body {
 }
 
 /*************PARTNERS**************/
-.partners-about {
-  @apply
-  text-white
-  w-4/5
-  flex
-  flex-shrink-0
-  justify-center
-  gap-12
-  p-12
-  mx-auto
-  bg-primary-green
-}
+
 /* Partners - AEMM */
 
 .contact, .about {
