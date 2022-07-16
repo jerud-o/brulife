@@ -2438,6 +2438,10 @@ html {
   position: relative;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .top-20 {
   top: 5rem;
 }
@@ -2448,10 +2452,6 @@ html {
 
 .bottom-0 {
   bottom: 0px;
-}
-
-.top-0 {
-  top: 0px;
 }
 
 .left-full {
@@ -2510,10 +2510,6 @@ html {
   margin-bottom: 1rem;
 }
 
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
-
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -2570,6 +2566,10 @@ html {
   display: none;
 }
 
+.h-\[110\%\] {
+  height: 110%;
+}
+
 .h-6 {
   height: 1.5rem;
 }
@@ -2604,6 +2604,10 @@ html {
 
 .w-full {
   width: 100%;
+}
+
+.w-3\/5 {
+  width: 60%;
 }
 
 .w-4\/5 {
@@ -2764,11 +2768,6 @@ html {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-primary-gray {
-  --tw-bg-opacity: 1;
-  background-color: rgb(224 224 224 / var(--tw-bg-opacity));
-}
-
 .bg-primary-green {
   --tw-bg-opacity: 1;
   background-color: hsl(137 98% 26% / var(--tw-bg-opacity));
@@ -2785,6 +2784,10 @@ html {
 
 .bg-\[color\:var\(--gray\)\] {
   background-color: var(--gray);
+}
+
+.bg-\[url\(assets\/img\/engineers\.jpg\)\] {
+  background-image: url(assets/img/engineers.jpg);
 }
 
 .bg-\[url\(assets\/img\/career-bg\.jpg\)\] {
@@ -2891,10 +2894,6 @@ html {
   text-align: right;
 }
 
-.indent-16 {
-  text-indent: 4rem;
-}
-
 .indent-10 {
   text-indent: 2.5rem;
 }
@@ -2958,14 +2957,6 @@ html {
   text-transform: uppercase;
 }
 
-.capitalize {
-  text-transform: capitalize;
-}
-
-.leading-7 {
-  line-height: 1.75rem;
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -2979,6 +2970,11 @@ html {
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+.blur-\[3px\] {
+  --tw-blur: blur(3px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .blur-\[8px\] {
@@ -3042,10 +3038,13 @@ body {
 }
 
 .paragraph {
-  text-indent: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-indent: 3rem;
+  line-height: 1.75rem;
 }
 
 .sub-header {
+  margin-bottom: 0.5rem;
   font-size: 1.5rem;
   line-height: 2rem;
 }

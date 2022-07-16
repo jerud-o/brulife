@@ -40,12 +40,15 @@ body {
 
 .paragraph {
   @apply
-  indent-10
+  indent-12 
+  mb-2
+  leading-7
 }
 
 .sub-header {
   @apply
   text-2xl
+  mb-2
 }
 
 
