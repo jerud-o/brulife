@@ -1,15 +1,15 @@
 <?php require_once "includes/header.php"; ?>
 <?php require_once "includes/navbar.php"; ?>
-  <div class="flex items-center justify-center p-12 gap-12 bg-primary-green mx-auto my-12">
-    <div class="basis-1/4 text-6xl">
+  <div class="md:flex md:items-center md:justify-center md:p-12 md:gap-12 md:bg-primary-green md:mx-auto md:my-12">
+    <div class="sm:basis-1/4 md:block text-5xl xl:text-6xl hidden">
       <h1 class="text-white">BRU Consumer Goods Trading</h1>
     </div>
 
-    <div class="basis-3/4">
-      <img class="mx-auto border-slate-300 rounded-md border-[16px]" src="assets/img/brucgt.jpg">
+    <div class="sm:basis-3/4 h-40 md:h-40 xl:h-52">
+      <img class="mx-auto h-full md:border-slate-300 md:rounded-md md:border-[6px]" src="assets/img/brucgt.jpg">
     </div>
   </div>
-  <div class="text-white w-4/5 flex flex-shrink-0 justify-center gap-12 p-12 mx-auto bg-primary-green">
+  <div class="text-white p-4 sm:w-4/5 xl:w-4/6 sm:flex justify-center gap-12 md:p-12 mx-auto bg-primary-green">
     <!-- About Company -->
     <div class="about">
       <h1 class="text-4xl font-medium mb-4">About Us</h1>

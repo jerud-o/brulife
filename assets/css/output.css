@@ -2614,6 +2614,14 @@ html {
   height: 75%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
 .min-h-\[200px\] {
   min-height: 200px;
 }
@@ -3022,6 +3030,11 @@ html {
   font-size: 12vw;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -3215,8 +3228,28 @@ body {
     margin-bottom: 1rem;
   }
 
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
   .sm\:h-\[75px\] {
     height: 75px;
+  }
+
+  .sm\:w-4\/5 {
+    width: 80%;
+  }
+
+  .sm\:basis-1\/4 {
+    flex-basis: 25%;
+  }
+
+  .sm\:basis-3\/4 {
+    flex-basis: 75%;
   }
 
   .sm\:p-12 {
@@ -3239,12 +3272,34 @@ body {
     margin-right: auto;
   }
 
+  .md\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .md\:my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
   .md\:mt-14 {
     margin-top: 3.5rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
+  }
+
+  .md\:h-auto {
+    height: auto;
+  }
+
+  .md\:h-40 {
+    height: 10rem;
   }
 
   .md\:min-h-\[312px\] {
@@ -3275,6 +3330,10 @@ body {
     flex-wrap: wrap;
   }
 
+  .md\:items-center {
+    align-items: center;
+  }
+
   .md\:justify-center {
     justify-content: center;
   }
@@ -3287,12 +3346,38 @@ body {
     gap: 3rem;
   }
 
+  .md\:rounded-md {
+    border-radius: 0.375rem;
+  }
+
+  .md\:border-\[16px\] {
+    border-width: 16px;
+  }
+
+  .md\:border-\[86px\] {
+    border-width: 86px;
+  }
+
+  .md\:border-\[6px\] {
+    border-width: 6px;
+  }
+
   .md\:border-b-2 {
     border-bottom-width: 2px;
   }
 
+  .md\:border-slate-300 {
+    --tw-border-opacity: 1;
+    border-color: rgb(203 213 225 / var(--tw-border-opacity));
+  }
+
   .md\:border-b-\[color\:var\(--green\)\] {
     border-bottom-color: var(--green);
+  }
+
+  .md\:bg-primary-green {
+    --tw-bg-opacity: 1;
+    background-color: hsl(137 98% 26% / var(--tw-bg-opacity));
   }
 
   .md\:bg-\[length\:300\%_auto\] {
@@ -3315,6 +3400,10 @@ body {
     padding: 1rem;
   }
 
+  .md\:p-12 {
+    padding: 3rem;
+  }
+
   .md\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -3328,6 +3417,10 @@ body {
 @media (min-width: 1024px) {
   .lg\:mb-8 {
     margin-bottom: 2rem;
+  }
+
+  .lg\:mb-12 {
+    margin-bottom: 3rem;
   }
 
   .lg\:block {
@@ -3389,6 +3482,10 @@ body {
     height: 20rem;
   }
 
+  .xl\:h-52 {
+    height: 13rem;
+  }
+
   .xl\:w-\[80\%\] {
     width: 80%;
   }
@@ -3403,6 +3500,10 @@ body {
 
   .xl\:w-2\/5 {
     width: 40%;
+  }
+
+  .xl\:w-4\/6 {
+    width: 66.666667%;
   }
 
   .xl\:basis-1\/3 {
