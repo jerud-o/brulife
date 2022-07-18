@@ -35,7 +35,8 @@ body {
 
 .contact, .about {
   @apply
-  w-1/2
+  w-full
+  lg:w-1/2
 }
 
 .paragraph {
