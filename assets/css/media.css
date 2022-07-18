@@ -1,0 +1,390 @@
+.custom-content-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.custom-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../img/entmedia-img/brutv-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.custom-bg::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(7px);
+    filter: brightness(50%);
+}
+
+.custom-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 95%;
+    height: auto;
+    color: white;
+    z-index: 10;
+}
+
+.custom-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.custom-logo {
+    width: 150px;
+    height: auto;
+}
+
+.custom-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.custom-text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 95%;
+    height: auto;
+    padding: 10px;
+}
+
+.custom-text-content h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.custom-text-content p {
+    text-indent: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.custom-button-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.custom-button {
+    position: absolute;
+    border: 2px solid black;
+    background-image: linear-gradient(to bottom right, #ff4d4d, #ffff4d);
+    color: white;
+    padding: 10px 20px;
+    transition: all 0.4s ease-in-out;
+    white-space: nowrap;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.custom-button:hover {
+    transition: all 0.4s ease-in-out;
+    background-image: linear-gradient(to bottom right, #ff0000, #ffff00);
+    color: white;
+}
+
+.custom-button::after {
+    content: "\f04b";
+    font-family: "font awesome 5 free";
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.custom-caption {
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+.custom-video-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.custom-video-style {
+    margin: 20px;
+    width: 300px;
+    height: 200px;
+}
+
+@media screen and (min-width: 640px){
+
+    .custom-video-style {
+        margin: 20px;
+        width: 350px;
+        height: 250px;
+    }
+
+    .custom-video-layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .custom-video-style {
+        margin: 20px;
+        width: 600px;
+        height: 400px;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+
+    .custom-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 95%;
+        height: auto;
+        color: white;
+        z-index: 10;
+    }
+    
+    .custom-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .custom-logo {
+        width: 150px;
+        height: auto;
+    }
+    
+    .custom-title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+    
+    .custom-text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        width: 80%;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .custom-text-content h1 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .custom-text-content p {
+        text-indent: 10px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .custom-caption {
+        display: flex;
+        font-size: 30px;
+        font-weight: bold;
+        margin: auto;
+        margin-top: 70px;
+        margin-left: 20px;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .custom-caption {
+        display: flex;
+        font-size: 30px;
+        font-weight: bold;
+        margin: auto;
+        margin-top: 70px;
+        margin-left: 20px;
+    }
+    
+    .custom-video-layout {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .custom-video-style {
+        margin: 10px;
+        width: 350px;
+        height: 250px;
+    }
+
+}
+
+@media screen and (min-width: 1080px) {
+
+    .custom-content-wrapper {
+        position: relative;
+        width: 100%;
+    }
+
+    .custom-bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url(../img/entmedia-img/brutv-bg.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    .custom-bg::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(7px);
+        filter: brightness(50%);
+    }
+
+    .custom-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 80%;
+        height: auto;
+        color: white;
+        z-index: 10;
+    }
+
+    .custom-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .custom-logo {
+        width: 250px;
+        height: auto;
+    }
+
+    .custom-title {
+        font-size: 90px;
+        font-weight: bold;
+    }
+
+    .custom-text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 70%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .custom-text-content h1 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .custom-text-content p {
+        text-indent: 50px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .custom-button-style {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .custom-button {
+        position: absolute;
+        border: 2px solid black;
+        background-image: linear-gradient(to bottom right, #ff4d4d, #ffff4d);
+        color: white;
+        padding: 10px 20px;
+        transition: all 0.4s ease-in-out;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .custom-button:hover {
+        transition: all 0.4s ease-in-out;
+        background-image: linear-gradient(to bottom right, #ff0000, #ffff00);
+        color: white;
+    }
+
+    .custom-button::after {
+        content: "\f04b";
+        font-family: "font awesome 5 free";
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    .custom-caption {
+        display: flex;
+        font-size: 30px;
+        font-weight: bold;
+        margin: auto;
+        margin-top: 80px;
+        width: 75%;
+    }
+
+    .custom-video-layout {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .custom-video-style {
+        margin: 20px;
+        width: 350px;
+        height: 250px;
+    }
+
+}
