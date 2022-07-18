@@ -43,11 +43,12 @@ body {
   indent-12 
   mb-2
   leading-7
+  
 }
 
 .sub-header {
   @apply
-  text-2xl
+  text-3xl
   mb-2
 }
 
