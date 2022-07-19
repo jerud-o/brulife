@@ -1,12 +1,12 @@
-<?php require_once "includes/header.php"; ?>
-<?php require_once "includes/navbar.php"; ?>
+<?php require_once "../includes/header.php"; ?>
+<?php require_once "../includes/navbar.php"; ?>
 <div class="text-white flex flex-col xl:flex-row xl:px-20 xl:gap-12 items-center w-full mb-4 lg:p-4 mx-auto bg-primary-green">
    <div class="xl:basis-1/2 text-5xl xl:text-6xl lg:mb-8">
       <h1 class="text-white hidden lg:block">AEMM GENCON ENGINEERING SERVICES</h1>
    </div>
 
    <div class="xl:basis-1/2">
-      <img class="" src="assets/img/aemm.jpg">
+      <img class="" src="../assets/img/aemm.jpg">
    </div>
 </div>
 <div class="text-white p-4 mx-auto lg:flex w-11/12 lg:w-4/6 lg:p-8 bg-primary-green">
@@ -55,8 +55,8 @@
    </div>
 </div>
 <?php
-require_once "includes/footer.php";
-require_once "includes/scripts.php";
+require_once "../includes/footer.php";
+require_once "../includes/scripts.php";
 ?>
 <script src="assets/js/aemm.js"></script>
 </body>

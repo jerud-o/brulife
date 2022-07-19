@@ -1,8 +1,8 @@
-<?php require_once "includes/header.php"; ?>
-<?php require_once "includes/navbar.php"; ?>
+<?php require_once "../includes/header.php"; ?>
+<?php require_once "../includes/navbar.php"; ?>
 <div class="bg-[url(assets/img/engineers.jpg)] bg-no-repeat bg-cover fixed top-0 blur-[3px] h-[110%] w-full z-[-1]"></div>
 <div class="h-32 mb-4 lg:py-12 lg:h-72 xl:h-80">
-   <img src="assets/img/aci.jpg" alt="aci-banner" class="h-full w-full">
+   <img src="../assets/img/aci.jpg" alt="aci-banner" class="h-full w-full">
 </div>
 <div class="text-white rounded-md w-11/12 md:w-10/12 md:p-8 lg:w-4/6 p-4 mx-auto bg-primary-green mb-12">
    <div class="mb-10">
@@ -71,8 +71,8 @@
    </div>
 </div>
 <?php
-require_once "includes/footer.php";
-require_once "includes/scripts.php";
+require_once "../includes/footer.php";
+require_once "../includes/scripts.php";
 ?>
 <script>
    // document.body.style.backgroundImage = "url(assets/img/engineers.jpg)";

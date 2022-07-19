@@ -1,12 +1,12 @@
-<?php require_once "includes/header.php"; ?>
-<?php require_once "includes/navbar.php"; ?>
+<?php require_once "../includes/header.php"; ?>
+<?php require_once "../includes/navbar.php"; ?>
   <div class="md:flex md:items-center md:justify-center md:p-12 md:gap-12 md:bg-primary-green md:mx-auto md:my-12">
     <div class="sm:basis-1/4 md:block text-5xl xl:text-6xl hidden">
       <h1 class="text-white">BRU Consumer Goods Trading</h1>
     </div>
 
     <div class="sm:basis-3/4 h-40 md:h-40 xl:h-52">
-      <img class="mx-auto h-full md:border-slate-300 md:rounded-md md:border-[6px]" src="assets/img/brucgt.jpg">
+      <img class="mx-auto h-full md:border-slate-300 md:rounded-md md:border-[6px]" src="../assets/img/brucgt.jpg">
     </div>
   </div>
   <div class="text-white p-4 sm:w-4/5 xl:w-4/6 sm:flex justify-center gap-12 md:p-12 mx-auto bg-primary-green">
@@ -53,10 +53,10 @@
     </div>
   </div>
   <?php
-  require_once "includes/footer.php";
-  require_once "includes/scripts.php";
+  require_once "../includes/footer.php";
+  require_once "../includes/scripts.php";
   ?>
-  <script src="assets/js/aemm.js"></script>
+  <script src="../assets/js/aemm.js"></script>
 </body>
 
 </html>
