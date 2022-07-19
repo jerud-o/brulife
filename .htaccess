@@ -1,0 +1,17 @@
+# REDIRECT ALL REQUESTS TO INDEX
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
+# DENY DIRECT ACCESS
+<Files *.php>
+    Order Deny,Allow
+    Deny from all
+    Allow from 127.0.0.1
+</Files>
+<FilesMatch "^(index|403|404)\.php$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+ErrorDocument 403 /brulife/403.php
+ErrorDocument 404 /brulife/404.php

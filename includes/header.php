@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="../assets/css/output.css?<?= uniqid() ?>" rel="stylesheet">
+    <link href="./assets/css/output.css?<?= uniqid() ?>" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"/>
     <style type="text/css">
@@ -97,5 +97,21 @@
             @apply h-full flex items-center px-6 py-4 text-2xl font-semibold
                 md:px-6
                 lg:hidden;
+        }
+        footer nav > div {
+            @apply p-2;
+        }
+        footer h6 {
+            @apply px-4 py-2 text-sm font-semibold uppercase;
+        }
+        footer nav ul a {
+            @apply block px-4 py-2
+                hover:bg-slate-600;
+        }
+        footer nav > div:last-of-type a {
+            @apply block;
+        }
+        footer nav > div:last-of-type .button {
+            @apply p-4 border-2 border-[color:var(--green)] text-center font-bold tracking-widest uppercase;
         }
     </style>
