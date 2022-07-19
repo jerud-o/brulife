@@ -17,7 +17,7 @@
         <div class="custom-bg"></div>
         <div class="custom-content">
             <div class="custom-header">
-                <img class="custom-logo" src="assets/img/entmedia-img/brutv-logo.png" alt="bru-logo">
+                <img class="custom-logo" src="assets/img/media/brutv-logo.png" alt="bru-logo">
                 <div class="custom-title">BRU Digital TV</div>
             </div>
             <div class="custom-text-content">
@@ -33,7 +33,7 @@
     </div>
 
     <div class="custom-video-layout">
-        <iframe class="custom-video-style" src="https://www.youtube.com/embed/8rkaIOzaCKM?modestbranding=1&amp;rel=0&amp;autoplay=1&amp;mute=1&amp;loop=1" title="BRUTV SIGNING ON" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="custom-video-style" src="https://www.youtube.com/embed/8rkaIOzaCKM?modestbranding=1&amp;rel=0&amp;autoplay=1&amp;mute=1" title="BRUTV SIGNING ON" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe class="custom-video-style" src="https://www.youtube.com/embed/_eJbV6MyegQ?modestbranding=1&amp;rel=0" title="E-GAME TODAY - Teaser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe class="custom-video-style" src="https://www.youtube.com/embed/BnPYt1y1w_w?modestbranding=1&amp;rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
