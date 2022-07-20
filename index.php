@@ -1,35 +1,43 @@
 <?php
 
-define("WEB_ROOT", "/brulife/");
+define("APP_ROOT", "/" . basename(__DIR__) . "/");
 $uri = explode("/", $_SERVER["REQUEST_URI"]);
 
 switch(true) {
-    case empty($uri[2]) && count($uri) === 3:
-        require_once "home.php";
+    case (empty($uri[2]) && count($uri) === 3)
+        || (str_starts_with($uri[2], "home")):
+        require_once "templates/home.php";
         break;
-    case "projects" === $uri[2]:
-        require_once "up-pro.php";
+    case str_starts_with($uri[2], "projects"):
+        require_once "templates/project.php";
         break;
-    case "partners" === $uri[2]:
-        // NESTED CONDITION
+    case str_starts_with($uri[2], "partners"):
+        switch(true) {
+            case str_starts_with($uri[3], "aemm"):
+                require_once "templates/partners/aemm.php";
+                break;
+            case str_starts_with($uri[3], "brucgt"):
+                require_once "templates/partners/brucgt.php";
+                break;
+        }
         break;
-    case "careers" === $uri[2]:
-        require_once "careers.php";
+    case str_starts_with($uri[2], "careers"):
+        require_once "templates/careers.php";
         break;
-    case "media" === $uri[2]:
-        require_once "media.php";
+    case str_starts_with($uri[2], "media"):
+        require_once "templates/media.php";
         break;
-    case "about" === $uri[2]:
-        require_once "about-us.php";
+    case str_starts_with($uri[2], "about"):
+        require_once "templates/about-us.php";
         break;
-    case "directors" === $uri[2]:
-        require_once "directors.php";
+    case str_starts_with($uri[2], "directors"):
+        require_once "templates/directors.php";
         break;
-    case "contact" === $uri[2]:
-        require_once "contact.php";
+    case str_starts_with($uri[2], "contact"):
+        require_once "templates/contact.php";
         break;
     default:
-        require_once "404.php";
+        require_once "templates/404.php";
         echo " (error from front controller)";
 }
 ?>

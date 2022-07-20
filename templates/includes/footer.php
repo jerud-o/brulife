@@ -39,7 +39,7 @@
     <div class="flex gap-4">
         <div class="company w-3/4 flex gap-4">
             <div class="img flex justify-center">
-                <img class="self-center" src="./assets/img/logo-banner.png" alt="logo-banner">
+                <img class="self-center" src="<?= APP_ROOT . 'assets/img/logo-banner.png' ?>" alt="logo-banner">
             </div>
             <div class="flex flex-col justify-center">
                 <div>

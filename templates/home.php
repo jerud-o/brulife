@@ -1,4 +1,4 @@
-<?php require_once "includes/header.php"; ?>
+<?php require_once __DIR__ . "/includes/header.php"; ?>
 
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 <style type="text/css">
@@ -49,7 +49,7 @@
     }
 </style>
 
-<?php require_once "includes/navbar.php"; ?>
+<?php require_once __DIR__ . "/includes/navbar.php"; ?>
 
 <div class="w-full">
     <section id="welcome" class="flex flex-col justify-center items-center">
@@ -119,6 +119,6 @@
 </div>
 
 <?php
-require_once "includes/footer.php";
-require_once "includes/scripts.php";
+require_once __DIR__ . "/includes/footer.php";
+require_once __DIR__ . "/includes/scripts.php";
 ?>

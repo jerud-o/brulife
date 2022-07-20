@@ -3,7 +3,7 @@
     <nav class="h-[100px] w-full flex relative items-center justify-between fixed top-0 border-b-[1px] bg-white border-b-slate-200 z-50">
         <div class="nav-logo">
             <a href="/brulife">
-                <img src="./assets/img/logo-banner.png" alt="BRU Life Logo Banner">
+                <img src="assets/img/logo-banner.png" alt="BRU Life Logo Banner">
             </a>
         </div>
         <div class="nav-button">

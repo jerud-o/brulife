@@ -1,5 +1,5 @@
-<?php require_once "../includes/header.php"; ?>
-<?php require_once "../includes/navbar.php"; ?>
+<?php require_once __DIR__ . "/../includes/header.php"; ?>
+<?php require_once __DIR__ . "/../includes/navbar.php"; ?>
   <div class="md:flex md:items-center md:justify-center md:p-12 md:gap-12 md:bg-primary-green md:mx-auto md:my-12">
     <div class="sm:basis-1/4 md:block text-5xl xl:text-6xl hidden">
       <h1 class="text-white">BRU Consumer Goods Trading</h1>
@@ -53,10 +53,10 @@
     </div>
   </div>
   <?php
-  require_once "../includes/footer.php";
-  require_once "../includes/scripts.php";
+  require_once __DIR__ . "/../includes/footer.php";
+  require_once __DIR__ . "/../includes/scripts.php";
   ?>
-  <script src="../assets/js/aemm.js"></script>
+  <script src="<?= APP_ROOT . 'assets/js/aemm.js' ?>"></script>
 </body>
 
 </html>

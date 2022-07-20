@@ -1,5 +1,5 @@
-<?php require_once "../includes/header.php"; ?>
-<?php require_once "../includes/navbar.php"; ?>
+<?php require_once __DIR__ . "/../includes/header.php"; ?>
+<?php require_once __DIR__ . "/../includes/navbar.php"; ?>
 <div class="bg-[url(assets/img/engineers.jpg)] bg-no-repeat bg-cover fixed top-0 blur-[3px] h-[110%] w-full z-[-1]"></div>
 <div class="h-32 mb-4 lg:py-12 lg:h-72 xl:h-80">
    <img src="../assets/img/aci.jpg" alt="aci-banner" class="h-full w-full">
@@ -71,8 +71,8 @@
    </div>
 </div>
 <?php
-require_once "../includes/footer.php";
-require_once "../includes/scripts.php";
+require_once __DIR__ . "/../includes/footer.php";
+require_once __DIR__ . "/../includes/scripts.php";
 ?>
 <script>
    // document.body.style.backgroundImage = "url(assets/img/engineers.jpg)";
