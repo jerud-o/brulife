@@ -4,6 +4,7 @@ HEADER.PHP
             <!-- html includes/required style here -->
 HEADER.PHP
             <!-- page-specific style here -->
+            <!-- page-specific scripts here -->
 NAVBAR.PHP
         </head>
         <body>

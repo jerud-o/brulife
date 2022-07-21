@@ -102,16 +102,20 @@
             @apply p-2;
         }
         footer h6 {
-            @apply px-4 py-2 text-sm font-semibold uppercase;
+            @apply px-4 py-2 text-sm font-bold uppercase;
         }
         footer nav ul a {
             @apply block px-4 py-2
-                hover:bg-slate-600;
+                hover:bg-[color:var(--green)] hover:text-white hover:font-medium;
         }
         footer nav > div:last-of-type a {
             @apply block;
         }
         footer nav > div:last-of-type .button {
-            @apply p-4 border-2 border-[color:var(--green)] text-center font-bold tracking-widest uppercase;
+            @apply transition-colors duration-300 p-4 border-2 border-[color:var(--green)] text-[color:var(--green)] text-center font-bold tracking-widest uppercase
+                hover:bg-[color:var(--green)] hover:text-white;
+        }
+        footer > div .links .link-item {
+            @apply h-[50px] w-[50px];
         }
     </style>

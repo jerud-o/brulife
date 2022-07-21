@@ -42,6 +42,10 @@ switch (true) {
     case str_starts_with($uri[2], "contact"):
         require_once "templates/contact.php";
         break;
+    case str_starts_with($uri[2], "test"): {
+        echo __DIR__;
+        break;
+    }
     default:
         require_once "templates/404.php";
 }
