@@ -23,9 +23,6 @@
     #welcome h2 {
         @apply text-[12vw] sm:text-[9vw] md:text-[8vw] lg:text-[7vw] font-black uppercase tracking-wider;
     }
-    #projects {
-        @apply bg-white;
-    }
     #projects .list header {
         @apply my-4 px-6 text-xl font-bold;
     }
