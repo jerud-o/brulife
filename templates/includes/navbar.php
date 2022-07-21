@@ -1,13 +1,13 @@
 </head>
 <body>
-    <nav class="h-[100px] sticky top-0 w-full flex relative items-center justify-between bg-white border-b-[1px] border-b-slate-200 z-50">
+    <nav class="h-[100px] sticky relative top-0 w-full flex justify-between items-center bg-white border-b-[1px] border-b-slate-200 z-50">
         <div class="nav-logo">
-            <a href="/brulife">
-                <img src="assets/img/logo-banner.png" alt="BRU Life Logo Banner">
+            <a href="<?= APP_ROOT ?>">
+                <img src="<?= APP_ROOT ?>assets/img/logo-banner.png" alt="BRU Life Logo Banner">
             </a>
         </div>
         <div class="nav-button">
-            <a href="contact">CONTACT US</a>
+            <a href="<?= APP_ROOT ?>contact">CONTACT US</a>
         </div>
         <div class="nav-toggle h-full">
             <a tabindex="0">
@@ -15,8 +15,8 @@
             </a>
         </div>
         <ul class="nav-menu w-full block absolute top-full lg:h-full lg:w-auto lg:flex lg:flex-wrap-reverse lg:items-start lg:justify-end lg:static">
-            <li class="nav-item"><a href="/brulife">Home</a></li>
-            <li class="nav-item"><a href="projects">Projects</a></li>
+            <li class="nav-item"><a href="<?= APP_ROOT ?>">Home</a></li>
+            <li class="nav-item"><a href="<?= APP_ROOT ?>projects">Projects</a></li>
             <li class="nav-item dropdown">
                 <a tabindex="0">Partners</a>
                 <ul class="dropdown-menu">
@@ -28,17 +28,17 @@
                     <li class="dropdown-item"><a href="#">BRU Consumer Goods Trading</a></li>
                 </ul>
             </li>
-            <li class="nav-item"><a href="careers">Careers</a></li>
-            <li class="nav-item"><a href="media">Entertainment & Media</a></li>
+            <li class="nav-item"><a href="<?= APP_ROOT ?>careers">Careers</a></li>
+            <li class="nav-item"><a href="<?= APP_ROOT ?>media">Entertainment & Media</a></li>
             <li class="nav-item dropdown">
                 <a tabindex="0">About</a>
                 <ul class="dropdown-menu">
-                    <li class="dropdown-item"><a href="about">Our Company</a></li>
-                    <li class="dropdown-item"><a href="directors">The Directors</a></li>
+                    <li class="dropdown-item"><a href="<?= APP_ROOT ?>about">Our Company</a></li>
+                    <li class="dropdown-item"><a href="<?= APP_ROOT ?>directors">The Directors</a></li>
                 </ul>
             </li>
             <li class="nav-item button">
-                <a href="contact">Contact Us</a>
+                <a href="<?= APP_ROOT ?>contact">Contact Us</a>
             </li>
         </ul>
     </nav>

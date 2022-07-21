@@ -5,17 +5,17 @@
     #about > .partners {
         background:
             linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-            url("assets/img/polygon-wall.jpg");
+            url("<?= APP_ROOT ?>assets/img/polygon-wall.jpg");
     }
     #values > div:first-of-type > div {
         background:
             linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-            url("assets/img/ej-yao-scenic.jpg");
+            url("<?= APP_ROOT ?>assets/img/ej-yao-scenic.jpg");
     }
     #values > div:nth-of-type(2) > div {
         background:
             linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-            url("assets/img/dakota-roos-skeleton.jpg");
+            url("<?= APP_ROOT ?>assets/img/dakota-roos-skeleton.jpg");
     }
     #about .info-left,
     #about .img-left,
@@ -221,7 +221,7 @@
             </div>
             <div class="graphics">
                 <div class="img-right">
-                    <img src="assets/img/brulife-tagline.jpg" alt="brulife-tagline">
+                    <img src="<?= APP_ROOT ?>assets/img/brulife-tagline.jpg" alt="brulife-tagline">
                 </div>
                 <div class="accent-right">
                     <div></div>

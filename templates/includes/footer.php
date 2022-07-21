@@ -54,9 +54,9 @@
             <div class="flex flex-col items-center md:items-start">
                 <h6>Follow Us</h6>
                 <div class="w-full flex justify-center lg:justify-start items-center px-4 gap-4 relative">
-                    <div class="link-item"><a href="#"><img src="assets/img/social-media/facebook.png" alt="fb-logo"></a></div>
-                    <div class="link-item"><a href="#"><img src="assets/img/social-media/instagram.png" alt="insta-logo"></a></div>
-                    <div class="link-item"><a href="#"><img src="assets/img/social-media/youtube.png" alt="yt-logo"></a></div>
+                    <div class="link-item"><a href="#"><img src="<?= APP_ROOT ?>assets/img/social-media/facebook.png" alt="fb-logo"></a></div>
+                    <div class="link-item"><a href="#"><img src="<?= APP_ROOT ?>assets/img/social-media/instagram.png" alt="insta-logo"></a></div>
+                    <div class="link-item"><a href="#"><img src="<?= APP_ROOT ?>assets/img/social-media/youtube.png" alt="yt-logo"></a></div>
                 </div>
             </div>
             <div class="team">
