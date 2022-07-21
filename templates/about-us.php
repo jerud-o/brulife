@@ -1,5 +1,6 @@
 <?php require_once __DIR__ . "/includes/header.php"; ?>
 
+<title>About BRULife</title>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 <style type="text/css">
     #about > .partners {
@@ -231,7 +232,7 @@
         <div class="row">
             <div class="graphics">
                 <div class="img-left">
-                    <img src="assets/img/brulife-psd.jpg" alt="brulife-psd">
+                    <img src="<?= APP_ROOT ?>assets/img/brulife-psd.jpg" alt="brulife-psd">
                 </div>
                 <div class="accent-left"></div>
             </div>
@@ -247,12 +248,12 @@
                 <p>BRULife Great Holdings also maintains a strategic relationship with their partner company, BRULife a private holding company dedicated to retail banking.</p>
             </div>
             <div class="graphics">
-                <img src="assets/img/logo-banner.png" alt="demo-logo">
-                <img src="assets/img/logo-banner.png" alt="demo-logo">
-                <img src="assets/img/logo-banner.png" alt="demo-logo">
-                <img src="assets/img/logo-banner.png" alt="demo-logo">
-                <img src="assets/img/logo-banner.png" alt="demo-logo">
-                <img src="assets/img/logo-banner.png" alt="demo-logo">
+                <img src="<?= APP_ROOT ?>assets/img/logo-banner.png" alt="demo-logo">
+                <img src="<?= APP_ROOT ?>assets/img/logo-banner.png" alt="demo-logo">
+                <img src="<?= APP_ROOT ?>assets/img/logo-banner.png" alt="demo-logo">
+                <img src="<?= APP_ROOT ?>assets/img/logo-banner.png" alt="demo-logo">
+                <img src="<?= APP_ROOT ?>assets/img/logo-banner.png" alt="demo-logo">
+                <img src="<?= APP_ROOT ?>assets/img/logo-banner.png" alt="demo-logo">
             </div>
         </div>
     </section>
@@ -288,7 +289,7 @@
         <div class="m-4 p-4 relative flex flex-wrap justify-center bg-white rounded-md">
             <div class="medal-item">
                 <div class="graphics">
-                    <img src="assets/img/values/integrity.png" alt="integrity">
+                    <img src="<?= APP_ROOT ?>assets/img/values/integrity.png" alt="integrity">
                 </div>
                 <div class="info">
                     <p>Honesty and Integrity</p>
@@ -296,7 +297,7 @@
             </div>
             <div class="medal-item">
                 <div class="graphics">
-                    <img src="assets/img/values/passion.png" alt="passion">
+                    <img src="<?= APP_ROOT ?>assets/img/values/passion.png" alt="passion">
                 </div>
                 <div class="info">
                     <p>Passion for Excellence</p>
@@ -304,7 +305,7 @@
             </div>
             <div class="medal-item">
                 <div class="graphics">
-                    <img src="assets/img/values/humility.png" alt="humility">
+                    <img src="<?= APP_ROOT ?>assets/img/values/humility.png" alt="humility">
                 </div>
                 <div class="info">
                     <p>Humility</p>
@@ -312,7 +313,7 @@
             </div>
             <div class="medal-item">
                 <div class="graphics">
-                    <img src="assets/img/values/creativity.png" alt="creativity">
+                    <img src="<?= APP_ROOT ?>assets/img/values/creativity.png" alt="creativity">
                 </div>
                 <div class="info">
                     <p>Creativity</p>
@@ -320,7 +321,7 @@
             </div>
             <div class="medal-item">
                 <div class="graphics">
-                    <img src="assets/img/values/professionalism.png" alt="professionalism">
+                    <img src="<?= APP_ROOT ?>assets/img/values/professionalism.png" alt="professionalism">
                 </div>
                 <div class="info">
                     <p>Professionalism</p>
@@ -328,7 +329,7 @@
             </div>
             <div class="medal-item">
                 <div class="graphics">
-                    <img src="assets/img/values/teamwork.png" alt="teamwork">
+                    <img src="<?= APP_ROOT ?>assets/img/values/teamwork.png" alt="teamwork">
                 </div>
                 <div class="info">
                     <p>Team Work</p>
@@ -336,7 +337,7 @@
             </div>
             <div class="medal-item">
                 <div class="graphics">
-                    <img src="assets/img/values/service.png" alt="service">
+                    <img src="<?= APP_ROOT ?>assets/img/values/service.png" alt="service">
                 </div>
                 <div class="info">
                     <p>Service</p>

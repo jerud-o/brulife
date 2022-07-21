@@ -1,6 +1,6 @@
 </head>
 <body>
-    <nav class="h-[100px] sticky relative top-0 w-full flex justify-between items-center bg-white border-b-[1px] border-b-slate-200 z-50">
+    <nav class="sticky h-[100px] w-full top-0 flex justify-between items-center bg-white border-b-[1px] border-b-slate-200 z-50">
         <div class="nav-logo">
             <a href="<?= APP_ROOT ?>">
                 <img src="<?= APP_ROOT ?>assets/img/logo-banner.png" alt="BRU Life Logo Banner">
@@ -21,11 +21,11 @@
                 <a tabindex="0">Partners</a>
                 <ul class="dropdown-menu">
                     <li class="dropdown-item"><a href="#">Arvin Construction</a></li>
-                    <li class="dropdown-item"><a href="#">Divine Medical</a></li>
+                    <li class="dropdown-item"><a href="#">Divine Chemical</a></li>
                     <li class="dropdown-item"><a href="#">Graymark</a></li>
                     <li class="dropdown-item"><a href="#">Jaru Farm</a></li>
                     <li class="dropdown-item"><a href="#">Genco Engineering Services</a></li>
-                    <li class="dropdown-item"><a href="#">BRU Consumer Goods Trading</a></li>
+                    <li class="dropdown-item"><a href="<?= APP_ROOT ?>partners/brucgt">BRU Consumer Goods Trading</a></li>
                 </ul>
             </li>
             <li class="nav-item"><a href="<?= APP_ROOT ?>careers">Careers</a></li>
