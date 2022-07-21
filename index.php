@@ -12,7 +12,7 @@ switch (true) {
         require_once "templates/project.php";
         break;
     case str_starts_with($uri[2], "project"):
-        
+        require_once "templates/project-template.php";
         break;
     case str_starts_with($uri[2], "partners"):
         switch (true) {

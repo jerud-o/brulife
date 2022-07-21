@@ -13,6 +13,7 @@
         margin-bottom: 20px;
         width: 95%;
         border: 2px solid black;
+        background-color: white;
     }
 
     .custom-wrapper img {
