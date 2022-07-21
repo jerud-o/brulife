@@ -39,7 +39,7 @@
     <div class="card-flex-custom">
         <div class="card-custom">
             <div class="card-img-custom">
-                <img src="assets/img/project/001.png" alt="img">
+                <img src="assets/img/project/processing-dressing-plant.png" alt="img">
             </div>
             <div class="card-content-custom">
                 <h3>DRESSING AND PROCESSING PLANT</h3>
@@ -50,7 +50,7 @@
 
         <div class="card-custom">
             <div class="card-img-custom">
-                <img src="assets/img/project/002.jpg" alt="img">
+                <img src="assets/img/project/brulife-twin-tower-business-center.jpg" alt="img">
             </div>
             <div class="card-content-custom">
                 <h3>BRU LIFE TWIN TOWER BUSINESS CENTER</h3>
@@ -63,7 +63,7 @@
     <div class="card-flex-custom">
         <div class="card-custom">
             <div class="card-img-custom">
-                <img src="assets/img/project/003.jpg" alt="img">
+                <img src="assets/img/project/the-platform-mall.jpg" alt="img">
             </div>
             <div class="card-content-custom">
                 <h3>THE PLATFORM MALL</h3>
@@ -74,7 +74,7 @@
 
         <div class="card-custom">
             <div class="card-img-custom">
-                <img src="assets/img/project/004.jpg" alt="img">
+                <img src="assets/img/project/klaires-ville-subdivision.jpg" alt="img">
             </div>
             <div class="card-content-custom">
                 <h3>KLAIRES VILLE SUBDIVISION</h3>
@@ -87,7 +87,7 @@
     <div class="card-flex-custom">
         <div class="card-custom">
             <div class="card-img-custom">
-                <img src="assets/img/project/005.jpg" alt="img">
+                <img src="assets/img/project/new-hope-medical-center.jpg" alt="img">
             </div>
             <div class="card-content-custom">
                 <h3>NEW HOPE MEDICAL CENTRE</h3>
@@ -98,7 +98,7 @@
 
         <div class="card-custom">
             <div class="card-img-custom">
-                <img src="assets/img/project/006.jpg" alt="img">
+                <img src="assets/img/project/brulife-ip-tower.jpg" alt="img">
             </div>
             <div class="card-content-custom">
                 <h3>BRU LIFE IP TOWER</h3>
@@ -111,7 +111,7 @@
     <div class="card-flex-custom">
         <div class="card-custom">
             <div class="card-img-custom">
-                <img src="assets/img/project/007.jpg" alt="img">
+                <img src="assets/img/project/new-hope-medical-center-2.jpg" alt="img">
             </div>
             <div class="card-content-custom">
                 <h3>NEW HOPE MEDICAL CENTRE</h3>
@@ -122,7 +122,7 @@
 
         <div class="card-custom">
             <div class="card-img-custom">
-                <img src="assets/img/project/008.jpg" alt="img">
+                <img src="assets/img/project/ricefield.jpg" alt="img">
             </div>
             <div class="card-content-custom">
                 <h3>RICEFIELD</h3>
@@ -135,7 +135,7 @@
     <div class="card-flex-custom">
         <div class="card-custom">
             <div class="card-img-custom">
-                <img src="assets/img/project/009.jpg" alt="img">
+                <img src="assets/img/project/water-and-sewage-water-treatment.jpg" alt="img">
             </div>
             <div class="card-content-custom">
                 <h3>WATER AND WATER SEWAGE TREATMENT</h3>
@@ -146,7 +146,7 @@
 
         <div class="card-custom">
             <div class="card-img-custom">
-                <img src="assets/img/project/010.jpg" alt="img">
+                <img src="assets/img/project/cattle.jpg" alt="img">
             </div>
             <div class="card-content-custom">
                 <h3>CATTLE</h3>

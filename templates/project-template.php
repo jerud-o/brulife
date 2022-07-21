@@ -30,8 +30,15 @@
         font-weight: bold;
     }
 
+    .custom-content h2 {
+        font-size: 17px;
+        margin: 5px;
+        font-weight: bold;
+    }
+
     .custom-content p {
-        font-size: 16px;
+        font-size: 13px;
+        font-weight: 400;
         margin: 5px;
     }
 
@@ -123,8 +130,16 @@
             font-weight: bold;
         }
 
-        .custom-content p {
+
+        .custom-content h2 {
             font-size: 20px;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        .custom-content p {
+            font-size: 16px;
+            font-weight: 400;
             margin: 20px;
         }
     }
@@ -138,11 +153,11 @@
     <img src="assets/img/project/001.png" alt="content">
     <div class="custom-content">
         <h1>LOREM</h1>
-        <p><b>TARGET DATE START: </b></p>
+        <h2>TARGET DATE START: </h2>
         <p>MM/DD/YYYY</p>
-        <p><b>PROJECT BUDGET: </b></p>
+        <h2>PROJECT BUDGET: </h2>
         <p>&#8369; ###,###,###.##</p>
-        <p><b>PROJECT DESCRIPTION:</b></p>
+        <h2>PROJECT DESCRIPTION: </h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nam itaque adipisci error eligendi eos enim dolorem aut obcaecati quo, dolorum consequatur nemo odio quam, magni officiis atque iusto ipsum.</p>
     </div>
 </div>
