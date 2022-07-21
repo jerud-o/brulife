@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="<?= APP_ROOT . 'assets/css/output.css?' . uniqid() ?>" rel="stylesheet">
+    <link rel="icon" href="<?= APP_ROOT ?>assets/img/icon-banner.png">
+    <!-- <link href="<?= APP_ROOT . 'assets/css/output.css?' . uniqid() ?>" rel="stylesheet"> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"/>
     <style type="text/css">
@@ -18,6 +19,9 @@
         }
     </style>
     <style type="text/tailwindcss">
+        body {
+            @apply bg-[color:var(--gray)];
+        }
         /* Navbar Containers */
         .nav-menu,
         .dropdown-menu {
@@ -40,13 +44,16 @@
             @apply hidden px-4 pt-4 pb-2 border-b-[3px] border-b-transparent font-semibold text-center
                 lg:inline-block;
         }
-        .nav-menu.active .nav-item > a,
-        .nav-menu.active .nav-item > a {
+        .nav-menu.focused .nav-item > a,
+        .nav-menu.focused .nav-item > a {
             @apply block;
         }
         .nav-item > a:hover,
         .dropdown:hover > a {
             @apply text-[color:var(--green)] border-b-[color:var(--green)];
+        }
+        .nav-item.active > a {
+            @apply text-[color:var(--red)] border-b-[color:var(--red)];
         }
         /* Dropdown Items */
         .dropdown {
@@ -61,10 +68,10 @@
             @apply hidden border-[1px] border-slate-200
                 lg:absolute lg:top-full lg:right-0 lg:w-[200%];
         }
-        .dropdown.active > a {
+        .dropdown.focused > a {
             @apply text-[color:var(--green)] border-b-[color:var(--green)];
         }
-        .dropdown.active .dropdown-menu {
+        .dropdown.focused .dropdown-menu {
             @apply block;
         }
         .dropdown:hover .dropdown-menu {

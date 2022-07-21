@@ -35,7 +35,7 @@
 
 <body>
     <div class="custom-content">
-        <img src="assets/img/forbidden.png" alt="logo">
+        <img src="<?= APP_ROOT ?>assets/img/forbidden.png" alt="logo">
         <h1>FORBIDDEN</h1>
         <h2>You don't have permission to access / on this server.</h2>
     </div>

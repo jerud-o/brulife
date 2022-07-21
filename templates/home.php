@@ -1,14 +1,22 @@
 <?php require_once __DIR__ . "/includes/header.php"; ?>
 
+<title>BRULife Greatholdings Corporation</title>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 <style type="text/css">
     #welcome {
         background:
             linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-            url("assets/img/greg-rosenke-frames.jpg");
+            url("<?= APP_ROOT ?>assets/img/greg-rosenke-frames.jpg");
         background-size: cover;
         background-position: center;
     }
+    .thin-scrollbar {
+        scrollbar-color: rgb(179, 179, 179) #f1f1f1; /* thumb and track color */
+        scrollbar-width: thin;
+    }
+    .thin-scrollbar::-webkit-scrollbar { height: 5px; }
+    .thin-scrollbar::-webkit-scrollbar-track { background-color: #f1f1f1; border-radius: 3px; }
+    .thin-scrollbar::-webkit-scrollbar-thumb { background-color: rgb(179, 179, 179); border-radius: 3px; }
 </style>
 <style type="text/tailwindcss">
     * {
@@ -24,13 +32,19 @@
         @apply text-[12vw] sm:text-[9vw] md:text-[8vw] lg:text-[7vw] font-black uppercase tracking-wider;
     }
     #projects .list header {
-        @apply my-4 px-6 text-xl font-bold;
+        @apply my-4 text-xl font-bold;
     }
-    #projects .list header span {
+    #projects .list header a {
         @apply ml-1 text-sm font-medium;
     }
-    #projects .list section > div {
-        @apply px-6 flex flex-wrap gap-2 justify-evenly;
+    #projects .list section {
+        @apply px-6;
+    }
+    #projects .list section:first-of-type > div {
+        @apply pb-4 overflow-auto flex gap-4 justify-start snap-x;
+    }
+    #projects .list .list-item-custom {
+        @apply snap-start;
     }
     #projects .list .graphics {
         @apply h-[312px] w-[312px];
@@ -68,17 +82,17 @@
         </div>
     </section>
     <section id="projects">
-        <a href="#" class="block p-4 bg-[color:var(--gray)] text-center">
+        <a href="#" class="block p-4 bg-stone-100 text-center">
             <p><i class="fa-solid fa-angles-down"></i></p>
             <p>Take a peek at our projects</p>
         </a>
         <div class="list">
             <section>
-                <header>Project Investments <span>See more</span></header>
-                <div>
+                <header>Project Investments <a href="#">See more</a></header>
+                <div class="thin-scrollbar">
                     <div class="list-item-custom">
                         <div class="graphics">
-                            <img src="assets/img/upcoming-projects-img/001.png" alt="001">
+                            <img src="<?= APP_ROOT ?>assets/img/project/001.png" alt="001">
                         </div>
                         <div class="info">
                             <h6>Dressing, Processing Plant</h6>
@@ -87,7 +101,7 @@
                     </div>
                     <div class="list-item-custom">
                         <div class="graphics">
-                            <img src="assets/img/upcoming-projects-img/002.jpg" alt="002">
+                            <img src="<?= APP_ROOT ?>assets/img/project/002.jpg" alt="002">
                         </div>
                         <div class="info">
                             <h6>BRUlife Twin Tower Business Center</h6>
@@ -96,7 +110,7 @@
                     </div>
                     <div class="list-item-custom">
                         <div class="graphics">
-                            <img src="assets/img/upcoming-projects-img/005.jpg" alt="005">
+                            <img src="<?= APP_ROOT ?>assets/img/project/005.jpg" alt="005">
                         </div>
                         <div class="info">
                             <h6>Platform Mall</h6>
@@ -106,7 +120,7 @@
                 </div>
             </section>
             <section>
-                <header>Future Projects</header>
+                <header>Future Project Highlights</header>
                 <div>
                     
                 </div>

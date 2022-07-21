@@ -1,21 +1,22 @@
 <?php require_once __DIR__ . "/includes/header.php"; ?>
 
+<title>About BRULife</title>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 <style type="text/css">
     #about > .partners {
         background:
             linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-            url("assets/img/polygon-wall.jpg");
+            url("<?= APP_ROOT ?>assets/img/polygon-wall.jpg");
     }
     #values > div:first-of-type > div {
         background:
             linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-            url("assets/img/ej-yao-scenic.jpg");
+            url("<?= APP_ROOT ?>assets/img/ej-yao-scenic.jpg");
     }
     #values > div:nth-of-type(2) > div {
         background:
             linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-            url("assets/img/dakota-roos-skeleton.jpg");
+            url("<?= APP_ROOT ?>assets/img/dakota-roos-skeleton.jpg");
     }
     #about .info-left,
     #about .img-left,
@@ -221,7 +222,7 @@
             </div>
             <div class="graphics">
                 <div class="img-right">
-                    <img src="assets/img/brulife-tagline.jpg" alt="brulife-tagline">
+                    <img src="<?= APP_ROOT ?>assets/img/brulife-tagline.jpg" alt="brulife-tagline">
                 </div>
                 <div class="accent-right">
                     <div></div>
@@ -231,7 +232,7 @@
         <div class="row">
             <div class="graphics">
                 <div class="img-left">
-                    <img src="assets/img/brulife-psd.jpg" alt="brulife-psd">
+                    <img src="<?= APP_ROOT ?>assets/img/brulife-psd.jpg" alt="brulife-psd">
                 </div>
                 <div class="accent-left"></div>
             </div>
@@ -247,12 +248,12 @@
                 <p>BRULife Great Holdings also maintains a strategic relationship with their partner company, BRULife a private holding company dedicated to retail banking.</p>
             </div>
             <div class="graphics">
-                <img src="assets/img/logo-banner.png" alt="demo-logo">
-                <img src="assets/img/logo-banner.png" alt="demo-logo">
-                <img src="assets/img/logo-banner.png" alt="demo-logo">
-                <img src="assets/img/logo-banner.png" alt="demo-logo">
-                <img src="assets/img/logo-banner.png" alt="demo-logo">
-                <img src="assets/img/logo-banner.png" alt="demo-logo">
+                <img src="<?= APP_ROOT ?>assets/img/logo-banner.png" alt="demo-logo">
+                <img src="<?= APP_ROOT ?>assets/img/logo-banner.png" alt="demo-logo">
+                <img src="<?= APP_ROOT ?>assets/img/logo-banner.png" alt="demo-logo">
+                <img src="<?= APP_ROOT ?>assets/img/logo-banner.png" alt="demo-logo">
+                <img src="<?= APP_ROOT ?>assets/img/logo-banner.png" alt="demo-logo">
+                <img src="<?= APP_ROOT ?>assets/img/logo-banner.png" alt="demo-logo">
             </div>
         </div>
     </section>
@@ -288,7 +289,7 @@
         <div class="m-4 p-4 relative flex flex-wrap justify-center bg-white rounded-md">
             <div class="medal-item">
                 <div class="graphics">
-                    <img src="assets/img/values/integrity.png" alt="integrity">
+                    <img src="<?= APP_ROOT ?>assets/img/values/integrity.png" alt="integrity">
                 </div>
                 <div class="info">
                     <p>Honesty and Integrity</p>
@@ -296,7 +297,7 @@
             </div>
             <div class="medal-item">
                 <div class="graphics">
-                    <img src="assets/img/values/passion.png" alt="passion">
+                    <img src="<?= APP_ROOT ?>assets/img/values/passion.png" alt="passion">
                 </div>
                 <div class="info">
                     <p>Passion for Excellence</p>
@@ -304,7 +305,7 @@
             </div>
             <div class="medal-item">
                 <div class="graphics">
-                    <img src="assets/img/values/humility.png" alt="humility">
+                    <img src="<?= APP_ROOT ?>assets/img/values/humility.png" alt="humility">
                 </div>
                 <div class="info">
                     <p>Humility</p>
@@ -312,7 +313,7 @@
             </div>
             <div class="medal-item">
                 <div class="graphics">
-                    <img src="assets/img/values/creativity.png" alt="creativity">
+                    <img src="<?= APP_ROOT ?>assets/img/values/creativity.png" alt="creativity">
                 </div>
                 <div class="info">
                     <p>Creativity</p>
@@ -320,7 +321,7 @@
             </div>
             <div class="medal-item">
                 <div class="graphics">
-                    <img src="assets/img/values/professionalism.png" alt="professionalism">
+                    <img src="<?= APP_ROOT ?>assets/img/values/professionalism.png" alt="professionalism">
                 </div>
                 <div class="info">
                     <p>Professionalism</p>
@@ -328,7 +329,7 @@
             </div>
             <div class="medal-item">
                 <div class="graphics">
-                    <img src="assets/img/values/teamwork.png" alt="teamwork">
+                    <img src="<?= APP_ROOT ?>assets/img/values/teamwork.png" alt="teamwork">
                 </div>
                 <div class="info">
                     <p>Team Work</p>
@@ -336,7 +337,7 @@
             </div>
             <div class="medal-item">
                 <div class="graphics">
-                    <img src="assets/img/values/service.png" alt="service">
+                    <img src="<?= APP_ROOT ?>assets/img/values/service.png" alt="service">
                 </div>
                 <div class="info">
                     <p>Service</p>
