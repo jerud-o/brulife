@@ -1,7 +1,7 @@
 <?php
 
 function createConnection(
-    string $db_host = "127.0.0.1",
+    string $db_host = "192.168.1.86",
     string $database = "brulife",
     string $charset = "utf8mb4",
     string $db_username = "root",

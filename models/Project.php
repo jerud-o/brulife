@@ -12,7 +12,7 @@ class Project {
     public function __construct($item)
     {
         $this->id = $item['ID'];
-        $this->title = $item['Title'];
+        $this->title = ucwords($item['Title']);
         $this->dateStart = date("d F, Y", strtotime($item['DateStart']));
         $this->budget = ($item['Budget'] === floatval(0)) ? "No budget planned yet." : ("&#8369; " . $item['Budget']);
         $this->description = (!empty($item['Description'])) ? $item['Description'] : "No description found.";
