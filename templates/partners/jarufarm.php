@@ -2,7 +2,7 @@
 <!-- <link href="../../assets/css/output.css? <?= uniqid() ?>" rel="stylesheet"> -->
 <?php require_once __DIR__ . "/../includes/navbar.php"; ?>
 
-<div class="w-2/3 rounded-[100%] mx-auto bg-primary-green">
+<div class="w-2/3 lg:w-2/5 rounded-[100%] mx-auto bg-primary-green border-4 border-yellow-300">
    <img class=" mx-auto" src="https://jarufarm.com/images/logo.png" alt="jarufarm-logo">
 </div>
    <h1 class="tagline sm:text-lg italic w-3/4 sm:w-2/4 lg:w-1/4 mx-auto text-center mb-8 mt-2">"We Will Provide You The Best Production Which You Dreamt For!"</h1>

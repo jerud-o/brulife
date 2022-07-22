@@ -53,6 +53,9 @@ switch (true) {
             case str_starts_with($uri[3], "jarufarm"):
                 require_once "templates/partners/jarufarm.php";
                 break;
+            case str_starts_with($uri[3], "graymark"):
+                require_once "templates/partners/graymark.php";
+                break;
         }
         break;
     case str_starts_with($uri[2], "careers"):
