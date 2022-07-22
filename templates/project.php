@@ -8,7 +8,6 @@
 <?php require_once __DIR__ . "/includes/navbar.php"; ?>
 
 <div class="custom-content-bg bg-[url('assets/img/project/bg-img-02.jpg')]">
-
     <div class="lg:hidden custom-dropdown">
         <button onclick="myFunction()" class="custom-dropbtn">Show All</button>
         <div id="myDropdown" class="custom-dd-content">
@@ -21,7 +20,6 @@
             <a href="#">Agricultural</a>
         </div>
     </div>
-
     <div class="p-10 hidden lg:block">
         <div class="w-[80%] lg:w-[97%] xl:w-[80%] m-auto">
             <ul class="filter-list-custom">
@@ -35,7 +33,6 @@
             </ul>
         </div>
     </div>
-
     <div class="card-flex-custom">
         <div class="card-custom">
             <div class="card-img-custom">
@@ -47,7 +44,6 @@
                 <a href="project"><button class="btn-custom">See More</button></a>
             </div>
         </div>
-
         <div class="card-custom">
             <div class="card-img-custom">
                 <img src="assets/img/project/brulife-twin-tower-business-center.jpg" alt="img">

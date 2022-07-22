@@ -43,10 +43,10 @@ switch (true) {
             $i++;
         }
         
-        print "<pre>";
-        print_r($projectArray);
-        print "</pre>";
-        echo empty($projectArray[0]["description"]);
+        // print "<pre>";
+        // print_r($projectArray);
+        // print "</pre>";
+        // echo empty($projectArray[0]["description"]);
         
         // require_once "templates/project.php";
         break;

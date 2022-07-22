@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="<?= APP_ROOT ?>assets/img/icon-banner.png">
-    <!-- <link href="<?= APP_ROOT . 'assets/css/output.css?' . uniqid() ?>" rel="stylesheet"> -->
+    <link href="<?= APP_ROOT . 'assets/css/output.css?' . uniqid() ?>" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"/>
     <style type="text/css">
