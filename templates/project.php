@@ -33,132 +33,28 @@
             </ul>
         </div>
     </div>
-    <div class="card-flex-custom">
-        <div class="card-custom">
-            <div class="card-img-custom">
-                <img src="assets/img/project/processing-dressing-plant.png" alt="img">
+    <div id="gallery" class="flex flex-wrap flex-col lg:flex-row items-center">
+        <?php foreach ($projectArray as $project) : ?>
+            <div class="card-custom">
+                <div class="card-img-custom">
+                    <img src="<?=APP_ROOT?>assets/img/project/<?=$project->imagePath?>" alt="img">
+                </div>
+                <div class="card-content-custom">
+                    <h3><?=ucwords($project->title)?></h3>
+                    <?php foreach ($project->tags as $tag) : ?>
+                        <p><?=ucwords($tag)?></p>
+                    <?php endforeach ?>
+                    <a href="<?=APP_ROOT?>project/<?=base64_encode($project->id)?>"><button class="btn-custom">See More</button></a>
+                </div>
             </div>
-            <div class="card-content-custom">
-                <h3>DRESSING AND PROCESSING PLANT</h3>
-                <p>INDUSTRIAL</p>
-                <a href="project"><button class="btn-custom">See More</button></a>
-            </div>
-        </div>
-        <div class="card-custom">
-            <div class="card-img-custom">
-                <img src="assets/img/project/brulife-twin-tower-business-center.jpg" alt="img">
-            </div>
-            <div class="card-content-custom">
-                <h3>BRU LIFE TWIN TOWER BUSINESS CENTER</h3>
-                <p>BUSINESS BLDG.</p>
-                <a href="project"><button class="btn-custom">See More</button></a>
-            </div>
-        </div>
+        <?php endforeach ?>
     </div>
-
-    <div class="card-flex-custom">
-        <div class="card-custom">
-            <div class="card-img-custom">
-                <img src="assets/img/project/the-platform-mall.jpg" alt="img">
-            </div>
-            <div class="card-content-custom">
-                <h3>THE PLATFORM MALL</h3>
-                <p>MALLS</p>
-                <a href="project"><button class="btn-custom">See More</button></a>
-            </div>
-        </div>
-
-        <div class="card-custom">
-            <div class="card-img-custom">
-                <img src="assets/img/project/klaires-ville-subdivision.jpg" alt="img">
-            </div>
-            <div class="card-content-custom">
-                <h3>KLAIRES VILLE SUBDIVISION</h3>
-                <p>SUBDIVISION</p>
-                <a href="project"><button class="btn-custom">See More</button></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-flex-custom">
-        <div class="card-custom">
-            <div class="card-img-custom">
-                <img src="assets/img/project/new-hope-medical-center.jpg" alt="img">
-            </div>
-            <div class="card-content-custom">
-                <h3>NEW HOPE MEDICAL CENTRE</h3>
-                <p>HOSPITALS</p>
-                <a href="project"><button class="btn-custom">See More</button></a>
-            </div>
-        </div>
-
-        <div class="card-custom">
-            <div class="card-img-custom">
-                <img src="assets/img/project/brulife-ip-tower.jpg" alt="img">
-            </div>
-            <div class="card-content-custom">
-                <h3>BRU LIFE IP TOWER</h3>
-                <p>BUSINESS BLDG.</p>
-                <a href="project"><button class="btn-custom">See More</button></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-flex-custom">
-        <div class="card-custom">
-            <div class="card-img-custom">
-                <img src="assets/img/project/new-hope-medical-center-2.jpg" alt="img">
-            </div>
-            <div class="card-content-custom">
-                <h3>NEW HOPE MEDICAL CENTRE</h3>
-                <p>HOSPITALS</p>
-                <a href="project"><button class="btn-custom">See More</button></a>
-            </div>
-        </div>
-
-        <div class="card-custom">
-            <div class="card-img-custom">
-                <img src="assets/img/project/ricefield.jpg" alt="img">
-            </div>
-            <div class="card-content-custom">
-                <h3>RICEFIELD</h3>
-                <p>AGRICULTURAL</p>
-                <a href="project"><button class="btn-custom">See More</button></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-flex-custom">
-        <div class="card-custom">
-            <div class="card-img-custom">
-                <img src="assets/img/project/water-and-sewage-water-treatment.jpg" alt="img">
-            </div>
-            <div class="card-content-custom">
-                <h3>WATER AND WATER SEWAGE TREATMENT</h3>
-                <p>INDUSTRIAL</p>
-                <a href="project"><button class="btn-custom">See More</button></a>
-            </div>
-        </div>
-
-        <div class="card-custom">
-            <div class="card-img-custom">
-                <img src="assets/img/project/cattle.jpg" alt="img">
-            </div>
-            <div class="card-content-custom">
-                <h3>CATTLE</h3>
-                <p>AGRICULTURAL</p>
-                <a href="project"><button class="btn-custom">See More</button></a>
-            </div>
-        </div>
-    </div>
-
     <div class="custom-pagination">
         <a class="custom-previous-icon" href="#"><i class="fa-solid fa-angles-left"></i></a>
         <a class="active" href="#">1</a>
         <a href="#">2</a>
         <a class="custom-next-icon" href="#"><i class="fa-solid fa-angles-right"></i></a>
     </div>
-
 </div>
 
 <?php

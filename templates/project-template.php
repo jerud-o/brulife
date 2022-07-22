@@ -145,23 +145,20 @@
     }
 </style>
 
-
 <?php require_once __DIR__ . "/includes/navbar.php"; ?>
 
-
 <div class="custom-wrapper">
-    <img src="assets/img/project/001.png" alt="content">
+    <img src="<?=APP_ROOT?>assets/img/project/<?=$project->imagePath?>" alt="content">
     <div class="custom-content">
-        <h1>LOREM</h1>
+        <h1><?=$project->title?></h1>
         <h2>TARGET DATE START: </h2>
-        <p>MM/DD/YYYY</p>
+        <p><?=$project->dateStart?></p>
         <h2>PROJECT BUDGET: </h2>
-        <p>&#8369; ###,###,###.##</p>
+        <p><?=$project->budget?></p>
         <h2>PROJECT DESCRIPTION: </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nam itaque adipisci error eligendi eos enim dolorem aut obcaecati quo, dolorum consequatur nemo odio quam, magni officiis atque iusto ipsum.</p>
+        <p><?=$project->description?></p>
     </div>
 </div>
-
 
 <?php
 require_once __DIR__ . "/includes/footer.php";
