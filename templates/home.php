@@ -26,10 +26,10 @@
         @apply col-span-12 relative;
     }
     #welcome {
-        @apply h-[75vh] lg:h-auto p-6 text-white;
+        @apply h-[75vh] p-6 text-white;
     }
     #welcome h2 {
-        @apply text-[12vw] sm:text-[9vw] md:text-[8vw] lg:text-[7vw] font-black uppercase tracking-wider;
+        @apply text-[10vw] sm:text-[7vw] md:text-[6vw] lg:text-[5vw] font-black uppercase tracking-wider;
     }
     #projects .list header {
         @apply my-4 text-xl font-bold;
@@ -47,12 +47,12 @@
         @apply snap-start;
     }
     #projects .list .graphics {
-        @apply h-[312px] w-[312px];
+        @apply inline-block h-[312px] w-[312px];
     }
     #projects .list .graphics img {
         @apply h-[312px] w-auto border-[1px] border-neutral-300 rounded-md object-cover;
     }
-    #projects .list .info h6 {
+    #projects .list .info a {
         @apply text-lg font-semibold;
     }
     #projects .list .info p {
@@ -88,15 +88,15 @@
         </a>
         <div class="list">
             <section>
-                <header>Project Investments <a href="#">See more</a></header>
+                <header>Project Investments <a href="<?=APP_ROOT?>projects">See more</a></header>
                 <div class="thin-scrollbar">
                     <?php foreach ($projectArray as $project) : ?>
                         <div class="list-item-custom">
-                            <div class="graphics">
+                            <a href="<?=APP_ROOT?>project/<?=base64_encode($project->id)?>" class="graphics">
                                 <img src="<?=APP_ROOT?>assets/img/project/<?=$project->imagePath?>" alt="<?=$project->imagePath?>">
-                            </div>
+                            </a>
                             <div class="info">
-                                <h6><?=ucwords($project->title)?></h6>
+                                <a href="<?=APP_ROOT?>project/<?=base64_encode($project->id)?>"><?=ucwords($project->title)?></a>
                                 <?php foreach ($project->tags as $tag) : ?>
                                     <p><?=ucwords($tag)?></p>
                                 <?php endforeach ?>
@@ -107,8 +107,9 @@
             </section>
             <section>
                 <header>Future Project Highlights</header>
-                <div>
-                    
+                <div class="flex flex-col md:flex-row gap-4 mb-4">
+                    <iframe class="h-[312px] w-full md:w-1/2" src="https://www.youtube.com/embed/J7b1-LU1rwE" title="Malolos, Bulacan: Land Area 15 hectars" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="h-[312px] w-full md:w-1/2" src="https://www.youtube.com/embed/ZQt_dyFhCFM" title="DRT Bulacan 305 has construction project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </section>
         </div>

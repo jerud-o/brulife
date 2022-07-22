@@ -40,7 +40,7 @@
                     <img src="<?=APP_ROOT?>assets/img/project/<?=$project->imagePath?>" alt="img">
                 </div>
                 <div class="card-content-custom">
-                    <h3><?=ucwords($project->title)?></h3>
+                    <h3><?=$project->title?></h3>
                     <?php foreach ($project->tags as $tag) : ?>
                         <p><?=ucwords($tag)?></p>
                     <?php endforeach ?>
