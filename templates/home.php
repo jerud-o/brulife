@@ -90,33 +90,19 @@
             <section>
                 <header>Project Investments <a href="#">See more</a></header>
                 <div class="thin-scrollbar">
-                    <div class="list-item-custom">
-                        <div class="graphics">
-                            <img src="<?= APP_ROOT ?>assets/img/project/processing-dressing-plant.png" alt="001">
+                    <?php foreach ($projectArray as $project) : ?>
+                        <div class="list-item-custom">
+                            <div class="graphics">
+                                <img src="<?=APP_ROOT?>assets/img/project/<?=$project->imagePath?>" alt="<?=$project->imagePath?>">
+                            </div>
+                            <div class="info">
+                                <h6><?=ucwords($project->title)?></h6>
+                                <?php foreach ($project->tags as $tag) : ?>
+                                    <p><?=ucwords($tag)?></p>
+                                <?php endforeach ?>
+                            </div>
                         </div>
-                        <div class="info">
-                            <h6>Dressing, Processing Plant</h6>
-                            <p>Industrial</p>
-                        </div>
-                    </div>
-                    <div class="list-item-custom">
-                        <div class="graphics">
-                            <img src="<?= APP_ROOT ?>assets/img/project/002.jpg" alt="002">
-                        </div>
-                        <div class="info">
-                            <h6>BRULife Twin Tower Business Center</h6>
-                            <p>Business Building</p>
-                        </div>
-                    </div>
-                    <div class="list-item-custom">
-                        <div class="graphics">
-                            <img src="<?= APP_ROOT ?>assets/img/project/005.jpg" alt="005">
-                        </div>
-                        <div class="info">
-                            <h6>Platform Mall</h6>
-                            <p>Mall</p>
-                        </div>
-                    </div>
+                    <?php endforeach ?>
                 </div>
             </section>
             <section>

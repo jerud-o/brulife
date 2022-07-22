@@ -13,6 +13,15 @@ switch (true) {
         empty($uri[2]) && count($uri) === 3)
         || (str_starts_with($uri[2], "home")
     ):
+        $projectArray = array();
+        $query = "SELECT * FROM project LIMIT 10";
+        $stmt = $conn->prepare($query);
+        $stmt->execute();
+        
+        foreach ($stmt as $row) {
+            array_push($projectArray, new Project($row));
+        }
+
         require_once "templates/home.php";
         break;
     case str_starts_with($uri[2], "projects"):
@@ -22,23 +31,16 @@ switch (true) {
         $stmt->execute();
         
         foreach ($stmt as $row) {
-            $tags = explode(",", $row['Tag']);
-
-            array_push(
-                $projectArray,
-                new Project($row)
-            );
+            array_push($projectArray, new Project($row));
         }
         
         require_once "templates/project.php";
         break;
     case str_starts_with($uri[2], "project"):
-        $project = array();
         $query = "SELECT * FROM project WHERE ID = ?";
         $stmt = $conn->prepare($query);
         $stmt->execute([base64_decode($uri[3])]);
         $project = new Project($stmt->fetch());
-        // json($project);
 
         require_once "templates/project-template.php";
         break;
