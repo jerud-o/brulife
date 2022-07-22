@@ -76,10 +76,10 @@
     border-bottom: 2px solid transparent;
     color: white;
 }
-
+/* 
 .filter-list-custom li:active {
     color: ;
-}
+} */
 
 .card-flex-custom {
     display: flex;
