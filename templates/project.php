@@ -33,21 +33,23 @@
             </ul>
         </div>
     </div>
-    <div id="gallery" class="flex flex-wrap flex-col lg:flex-row items-center">
-        <?php foreach ($projectArray as $project) : ?>
-            <div class="card-custom">
-                <div class="card-img-custom">
-                    <img src="<?=APP_ROOT?>assets/img/project/<?=$project->imagePath?>" alt="img">
+    <div class="card-flex-custom">
+        <div id="gallery" class="flex flex-wrap flex-col lg:flex-row items-center justify-center">
+            <?php foreach ($projectArray as $project) : ?>
+                <div class="card-custom">
+                    <div class="card-img-custom">
+                        <img src="<?= APP_ROOT ?>assets/img/project/<?= $project->imagePath ?>" alt="img">
+                    </div>
+                    <div class="card-content-custom">
+                        <h3><?= ucwords($project->title) ?></h3>
+                        <?php foreach ($project->tags as $tag) : ?>
+                            <p><?= ucwords($tag) ?></p>
+                        <?php endforeach ?>
+                        <a href="<?= APP_ROOT ?>project/<?= base64_encode($project->id) ?>"><button class="btn-custom">See More</button></a>
+                    </div>
                 </div>
-                <div class="card-content-custom">
-                    <h3><?=$project->title?></h3>
-                    <?php foreach ($project->tags as $tag) : ?>
-                        <p><?=ucwords($tag)?></p>
-                    <?php endforeach ?>
-                    <a href="<?=APP_ROOT?>project/<?=base64_encode($project->id)?>"><button class="btn-custom">See More</button></a>
-                </div>
-            </div>
-        <?php endforeach ?>
+            <?php endforeach ?>
+        </div>
     </div>
     <div class="custom-pagination">
         <a class="custom-previous-icon" href="#"><i class="fa-solid fa-angles-left"></i></a>
