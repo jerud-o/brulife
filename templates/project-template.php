@@ -22,7 +22,9 @@
     }
 
     .custom-content {
+        flex-grow: 1;
         padding: 20px 10px 10px;
+        
     }
 
     .custom-content h1 {
@@ -57,7 +59,7 @@
 
         .custom-wrapper img {
             width: 100%;
-            height: 280px;
+            height: auto;
         }
 
     }
@@ -104,6 +106,7 @@
 
     }
 
+    /* XL Device */
     @media (min-width: 1080px) {
         .custom-wrapper {
             display: flex;
@@ -112,7 +115,8 @@
             margin: auto;
             margin-top: 20px;
             margin-bottom: 20px;
-            width: 80%;
+            max-width: 1000px;
+            width: 100%;
             border: 2px solid black;
         }
 

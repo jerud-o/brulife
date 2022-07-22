@@ -81,12 +81,11 @@
     color: ;
 } */
 
-.card-flex-custom {
+/* .card-flex-custom {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
+    margin: auto;
+} */
 
 .card-custom {
     display: flex;
@@ -254,6 +253,7 @@
     .card-custom {
         display: flex;
         flex-direction: row;
+        
         width: 45%;
         height: 250px;
         margin: 20px;
