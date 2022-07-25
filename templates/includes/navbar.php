@@ -21,7 +21,7 @@
                 <a tabindex="0">Partners</a>
                 <ul class="dropdown-menu">
                     <li class="dropdown-item"><a href="#">Arvin Construction</a></li>
-                    <li class="dropdown-item"><a href="#">Divine Chemical</a></li>
+                    <li class="dropdown-item"><a href="<?= APP_ROOT ?>partners/devine">Divine Chemical</a></li>
                     <li class="dropdown-item"><a href="#">Graymark</a></li>
                     <li class="dropdown-item"><a href="#">Jaru Farm</a></li>
                     <li class="dropdown-item"><a href="#">Genco Engineering Services</a></li>

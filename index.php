@@ -97,18 +97,25 @@ switch (true) {
         break;
     case str_starts_with($uri[2], "partners"):
         switch (true) {
+            case str_starts_with($uri[3], "arvin"):
+                require_once "templates/partners/aci.php";
+                break;
+            case str_starts_with($uri[3], "devine"):
+                require_once "templates/partners/dcr.php";
+                break;
+            case str_starts_with($uri[3], "graymark"):
+                require_once "templates/partners/graymark.php";
+                break;
+            case str_starts_with($uri[3], "jarufarm"):
+                require_once "templates/partners/jarufarm.php";
+                break;
             case str_starts_with($uri[3], "aemm"):
                 require_once "templates/partners/aemm.php";
                 break;
             case str_starts_with($uri[3], "brucgt"):
                 require_once "templates/partners/brucgt.php";
                 break;
-            case str_starts_with($uri[3], "jarufarm"):
-                require_once "templates/partners/jarufarm.php";
-                break;
-            case str_starts_with($uri[3], "graymark"):
-                require_once "templates/partners/graymark.php";
-                break;
+            
         }
         break;
     case str_starts_with($uri[2], "careers"):
