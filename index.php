@@ -1,10 +1,18 @@
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+
 define("APP_ROOT", "/" . basename(__DIR__) . "/");
 $uri = explode("/", $_SERVER["REQUEST_URI"]);
+
+require_once "vendor/autoload.php";
+require_once "vendor/phpmailer/PHPMailer/src/Exception.php";
+require_once "vendor/phpmailer/PHPMailer/src/PHPMailer.php";
+require_once "vendor/phpmailer/PHPMailer/src/SMTP.php";
 require_once "procedures/config.php";
 require_once "procedures/utility.php";
 require_once "models/Project.php";
+
 $conn = createConnection();
 $query = $stmt = "";
 
@@ -118,6 +126,59 @@ switch (true) {
         require_once "templates/directors.php";
         break;
     case str_starts_with($uri[2], "contact"):
+        if ($_SERVER['REQUEST_METHOD'] === "POST") {
+            $error = array();
+
+            // Clean data
+            foreach ($_POST as $key => $value) {
+                $_POST[$key] = trim(stripslashes(htmlspecialchars($value)));
+                
+                // for general keys
+                if (empty($value)) {
+                    $error[$key] = "Input is empty.";
+                    continue;
+                }
+
+                // for specific keys
+                if ($key === 'email' && !isEmailValid($value)) {
+                    // validate e-mail here
+                    $error[$key] = "E-mail is not formatted correctly";
+                } else if($key == 'phone'){
+                    
+                }
+            }
+
+            if (count($error) === 0) {
+                $mail = new PHPMailer(true);
+
+                try {
+                    //Server settings
+                    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+                    $mail->isSMTP();                                            //Send using SMTP
+                    $mail->Host       = "smtp.gmail.com";                       //Set the SMTP server to send through
+                    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+                    $mail->Username   = 'csdmail.north@gmail.com';                     //SMTP username
+                    $mail->Password   = 'rcgWrk03IKM6';                               //SMTP password
+                    $mail->SMTPSecure   = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
+                    $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+                    //Recipients
+                    $mail->setFrom("csdmail.north@gmail.com", "CSD e-MAIL");
+                    $mail->addReplyTo("csdmail.north@gmail.com");
+
+                    //Content
+                    $mail->isHTML(true);                                  //Set email format to HTML
+                    $mail->Subject = 'Here is the subject';
+                    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+                    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+                    $mail->send();
+                    // echo 'Message has been sent';
+                } catch (Exception $e) {
+                    // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+                }
+            }
+        }
         require_once "templates/contact.php";
         break;
     case str_starts_with($uri[2], "test"): {
@@ -126,4 +187,20 @@ switch (true) {
     }
     default:
         require_once "templates/404.php";
+}
+
+function isEmailValid($email)
+{
+    $checkStart = str_starts_with($email, ".");
+    $checkLen = (strlen($email) > 16);
+    $findAt = substr_count($email, "@");
+    $findDots = str_contains($email, "..");
+    $isValid = (
+        !$checkStart
+        && $checkLen
+        && $findAt === 1
+        && $findDots === 0
+    );
+    
+    return $isValid;
 }

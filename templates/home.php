@@ -67,7 +67,7 @@
                     document.querySelector("#projects .list").offsetTop
                     - document.querySelector("nav").offsetHeight
                     - 16;
-                smoothScrollTo(position, 500);
+                smoothScrollTo(position, 250);
             });
     });
 </script>

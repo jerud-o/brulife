@@ -18,52 +18,54 @@
             linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
             url("<?= APP_ROOT ?>assets/img/dakota-roos-skeleton.jpg");
     }
-    #about .info-left,
-    #about .img-left,
-    #about .info-right,
-    #about .img-right,
-    #about .accent-left,
-    #about .accent-right {
-        opacity: 0;
-    }
-    #about .row.active .accent-left,
-    #about .row.active .info-left,
-    #about .row.active .img-left {
-        animation-name: in-left;
-        animation-duration: 0.75s;
-        animation-timing-function: linear;
-        animation-fill-mode: forwards;
-    }
-    #about .row.active .accent-right,
-    #about .row.active .info-right,
-    #about .row.active .img-right {
-        animation-name: in-right;
-        animation-duration: 0.75s;
-        animation-timing-function: linear;
-        animation-fill-mode: forwards;
-    }
-    #about .row.active .info-left,
-    #about .row.active .img-left,
-    #about .row.active .info-right,
-    #about .row.active .img-right {
-        animation-delay: 1s;
-    }
-    @keyframes in-left {
-        from {
-            transform: translateX(-10%);
+    @media (min-width: 1024px) {
+        #about .info-left,
+        #about .img-left,
+        #about .info-right,
+        #about .img-right,
+        #about .accent-left,
+        #about .accent-right {
             opacity: 0;
-        } to {
-            transform: translateX(0);
-            opacity: 1;
         }
-    }
-    @keyframes in-right {
-        from {
-            transform: translateX(10%);
-            opacity: 0;
-        } to {
-            transform: translateX(0);
-            opacity: 1;
+        #about .row.active .accent-left,
+        #about .row.active .info-left,
+        #about .row.active .img-left {
+            animation-name: in-left;
+            animation-duration: 0.75s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+        }
+        #about .row.active .accent-right,
+        #about .row.active .info-right,
+        #about .row.active .img-right {
+            animation-name: in-right;
+            animation-duration: 0.75s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+        }
+        #about .row.active .info-left,
+        #about .row.active .img-left,
+        #about .row.active .info-right,
+        #about .row.active .img-right {
+            animation-delay: 0.5s;
+        }
+        @keyframes in-left {
+            from {
+                transform: translateX(-10%);
+                opacity: 0;
+            } to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes in-right {
+            from {
+                transform: translateX(10%);
+                opacity: 0;
+            } to {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
     }
 </style>
@@ -231,7 +233,7 @@
         </div>
         <div class="row">
             <div class="graphics">
-                <div class="img-left">
+                <div class="img-left justify-end">
                     <img src="<?= APP_ROOT ?>assets/img/brulife-psd.jpg" alt="brulife-psd">
                 </div>
                 <div class="accent-left"></div>

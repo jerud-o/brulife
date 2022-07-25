@@ -23,8 +23,8 @@
     <div class="p-10 hidden lg:block">
         <div class="w-[80%] lg:w-[97%] xl:w-[80%] m-auto">
             <ul class="filter-list-custom">
-                <li><a href="#">Show All</a></li>
-                <li><a href="#">Subdivision</a></li>
+                <li><a href="<?= APP_ROOT . "projects?p=1&filter=all" ?>" <?php if ($_GET['filter'] == "all") : ?>class="active"<?php endif ?>>Show All</a></li>
+                <li><a href="<?= APP_ROOT . "projects?p=1&filter=subdivision" ?>" <?php if ($_GET['filter'] == "subdivision") : ?>class="active"<?php endif ?>>Subdivision</a></li>
                 <li><a href="#">Business Buidling</a></li>
                 <li><a href="#">Hospital</a></li>
                 <li><a href="#">Malls</a></li>

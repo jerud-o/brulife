@@ -1,6 +1,6 @@
 <footer class="px-16 py-8 flex flex-col gap-4 bg-white border-t-[1px] border-t-slate-200">
     <nav class="hidden lg:flex">
-        <div class="w-1/4">
+        <div>
             <h6>Quick Links</h6>
             <ul>
                 <li><a href="<?= APP_ROOT ?>">Home</a></li>
@@ -9,7 +9,7 @@
                 <li><a href="<?= APP_ROOT ?>media">Entertainment & Media</a></li>
             </ul>
         </div>
-        <div class="w-1/4">
+        <div>
             <h6>Partners</h6>
             <ul>
                 <li><a href="#">Arvin Construction</a></li>
@@ -20,19 +20,28 @@
                 <li><a href="#">BRU Consumer Goods Trading</a></li>
             </ul>
         </div>
-        <div class="w-1/4">
+        <div>
             <h6>About</h6>
             <ul>
                 <li><a href="<?= APP_ROOT ?>about">Our Company</a></li>
                 <li><a href="<?= APP_ROOT ?>directors">The Directors</a></li>
             </ul>
         </div>
-        <div class="w-1/4">
-            <div class="flex flex-col gap-4">
-                <a class="button" href="<?= APP_ROOT ?>contact">Contact Us</a>
-                <a href="#">info@brulifegreatholdings.com</a>
-                <p>+63 966 465 6998</p>
-                <p>+632 8801 5025</p>
+        <div class="footer-contact">
+            <ul class="flex flex-col gap-4">
+                <li><a class="button" href="<?= APP_ROOT ?>contact">Contact Us</a></li>
+                <li>
+                    <div><i class="fa-solid fa-envelope"></i></div>
+                    <a href="mailto:info@brulifegreatholdings.com">info@brulifegreatholdings.com</a>
+                </li>
+                <li>
+                    <div><i class="fa-solid fa-phone"></i></div>
+                    <p>+63 966 465 6998</p>
+                </li>
+                <li>
+                    <div><i class="fa-solid fa-phone"></i></div>
+                    <p>+632 8801 5025</p>
+                </li>
             </div>
         </div>
     </nav>

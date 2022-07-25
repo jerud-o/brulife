@@ -47,12 +47,12 @@
         .nav-menu.focused .nav-item > a {
             @apply block;
         }
-        .nav-item > a:hover,
-        .dropdown:hover > a {
-            @apply text-[color:var(--green)] border-b-[color:var(--green)];
+        .nav-item:not(.active) > a:hover,
+        .dropdown:not(.active):hover > a {
+            @apply bg-[color:var(--green)] border-b-[color:var(--green)] text-white;
         }
         .nav-item.active > a {
-            @apply text-[color:var(--red)] border-b-[color:var(--red)];
+            @apply text-[color:var(--green)] border-b-[color:var(--green)];
         }
         /* Dropdown Items */
         .dropdown {
@@ -90,7 +90,7 @@
         .nav-logo img {
             @apply h-[80px] m-2;
         }
-        /* Navbar Item: Contact Us Button */
+        /* Navbar Item: footer-contact Us Button */
         .nav-button {
             @apply hidden px-6 py-4 bg-[color:var(--green)] rounded-full text-white font-bold
                 sm:block lg:hidden;
@@ -105,21 +105,30 @@
                 lg:hidden;
         }
         footer nav > div {
-            @apply p-2;
+            @apply p-2 w-1/4;
         }
         footer h6 {
             @apply px-4 py-2 text-sm font-bold uppercase;
         }
-        footer nav ul a {
+        footer nav > div:not(.footer-contact) ul a {
             @apply block px-4 py-2
                 hover:bg-[color:var(--green)] hover:text-white hover:font-medium;
         }
-        footer nav > div:last-of-type a {
-            @apply block;
-        }
-        footer nav > div:last-of-type .button {
+        footer nav > .footer-contact .button {
             @apply transition-colors duration-300 p-4 border-2 border-[color:var(--green)] text-[color:var(--green)] text-center font-bold tracking-widest uppercase
                 hover:bg-[color:var(--green)] hover:text-white;
+        }
+        footer nav > .footer-contact li:not(:first-of-type) {
+            @apply flex flex-col;
+        }
+        footer nav > .footer-contact li:not(:first-of-type) a {
+            @apply transition-colors hover:text-[color:var(--green)];
+        }
+        footer nav > .footer-contact li:not(:first-of-type) i {
+            @apply text-xl text-[color:var(--green)];
+        }
+        footer nav a {
+            @apply block;
         }
         footer > div .links .link-item {
             @apply h-[50px] w-[50px];
