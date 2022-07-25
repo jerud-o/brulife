@@ -87,6 +87,11 @@
     margin: auto;
 } */
 
+.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
 .card-custom {
     display: flex;
     flex-direction: column;

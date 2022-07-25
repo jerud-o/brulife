@@ -52,9 +52,14 @@
         </div>
     </div>
     <div class="custom-pagination">
-        <a class="custom-previous-icon" href="#"><i class="fa-solid fa-angles-left"></i></a>
-        <a class="active" href="#">1</a>
-        <a href="#">2</a>
+        <?php if ($backValue === 0) : ?>
+            <a class="custom-previous-icon disabled" href="#"><i class="fa-solid fa-angles-left"></i></a>
+        <?php else : ?>
+            <a class="custom-previous-icon" href="<?= APP_ROOT . "projects?p=" . $backValue . "&filter=" . $_GET['filter'] ?>"><i class="fa-solid fa-angles-left"></i></a>
+        <?php endif ?>
+        <?php for ($i = 1; $i <= $pages; $i++) : ?>
+            <a href="<?= APP_ROOT . "projects?p=" . $i . "&filter=" . $_GET['filter'] ?>" class="<?php if ($i == $_GET['p']) { echo "active"; } ?>"><?= $i ?></a>    
+        <?php endfor ?>
         <a class="custom-next-icon" href="#"><i class="fa-solid fa-angles-right"></i></a>
     </div>
 </div>

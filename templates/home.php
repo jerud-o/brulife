@@ -86,7 +86,7 @@
         </div>
         <div class="w-full flex items-center gap-4">
             <div class="ml-auto text-right">
-                <a href="#">info@brulifegreatholdings.com</a>
+                <a href="mailto:info@brulifegreatholdings.com">info@brulifegreatholdings.com</a>
                 <p>+63 966 465 6998</p>
                 <p>+632 8801 5025</p>
             </div>

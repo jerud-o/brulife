@@ -63,6 +63,8 @@ switch (true) {
                 $projectArrayFinal = array();
                 $start = ($_GET['p'] - 1) * 10;
                 $end = $start + 10;
+                $backValue = $_GET['p'] - 1;
+                $nextValue = $_GET['p'] + 1;
 
                 if ($end > count($filteredProjectArray)) {
                     $end = count($filteredProjectArray);

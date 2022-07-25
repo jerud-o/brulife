@@ -54,9 +54,9 @@
             <div class="flex flex-col items-center md:items-start">
                 <h6>Follow Us</h6>
                 <div class="w-full flex justify-center lg:justify-start items-center px-4 gap-4 relative">
-                    <div class="link-item"><a href="https://www.facebook.com/brulifegreatholdingscorporation/"><img src="<?= APP_ROOT ?>assets/img/social-media/facebook.png" alt="fb-logo"></a></div>
-                    <div class="link-item"><a href="https://www.instagram.com/allaboutbrulife/"><img src="<?= APP_ROOT ?>assets/img/social-media/instagram.png" alt="insta-logo"></a></div>
-                    <div class="link-item"><a href="https://www.youtube.com/channel/UCfZ4kY2ve7yy7u0v5hCOOwA"><img src="<?= APP_ROOT ?>assets/img/social-media/youtube.png" alt="yt-logo"></a></div>
+                    <div class="link-item"><a href="https://www.facebook.com/brulifegreatholdingscorporation/" target="_blank"><img src="<?= APP_ROOT ?>assets/img/social-media/facebook.png" alt="fb-logo"></a></div>
+                    <div class="link-item"><a href="https://www.instagram.com/allaboutbrulife/" target="_blank"><img src="<?= APP_ROOT ?>assets/img/social-media/instagram.png" alt="insta-logo"></a></div>
+                    <div class="link-item"><a href="https://www.youtube.com/channel/UCfZ4kY2ve7yy7u0v5hCOOwA" target="_blank"><img src="<?= APP_ROOT ?>assets/img/social-media/youtube.png" alt="yt-logo"></a></div>
                 </div>
             </div>
             <div class="team">
