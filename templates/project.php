@@ -35,7 +35,7 @@
     </div>
     <div class="card-flex-custom">
         <div id="gallery" class="flex flex-wrap flex-col lg:flex-row items-center justify-center">
-            <?php foreach ($projectArray as $project) : ?>
+            <?php foreach ($projectArrayFinal as $project) : ?>
                 <div class="card-custom">
                     <div class="card-img-custom">
                         <img src="<?= APP_ROOT ?>assets/img/project/<?= $project->imagePath ?>" alt="img">
