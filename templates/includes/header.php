@@ -9,7 +9,6 @@
     <link rel="icon" href="<?= APP_ROOT ?>assets/img/icon-banner.png">
     <link href="<?= APP_ROOT . 'assets/css/output.css?' . uniqid() ?>" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"/>
     <style type="text/css">
         :root {
             --green: #018427;

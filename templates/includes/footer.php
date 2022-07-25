@@ -3,10 +3,10 @@
         <div class="w-1/4">
             <h6>Quick Links</h6>
             <ul>
-                <li><a href="/brulife">Home</a></li>
-                <li><a href="projects">Projects</a></li>
-                <li><a href="careers">Careers</a></li>
-                <li><a href="media">Entertainment & Media</a></li>
+                <li><a href="<?= APP_ROOT ?>">Home</a></li>
+                <li><a href="<?= APP_ROOT ?>projects">Projects</a></li>
+                <li><a href="<?= APP_ROOT ?>careers">Careers</a></li>
+                <li><a href="<?= APP_ROOT ?>media">Entertainment & Media</a></li>
             </ul>
         </div>
         <div class="w-1/4">
@@ -23,13 +23,13 @@
         <div class="w-1/4">
             <h6>About</h6>
             <ul>
-                <li><a href="about">Our Company</a></li>
-                <li><a href="directors">The Directors</a></li>
+                <li><a href="<?= APP_ROOT ?>about">Our Company</a></li>
+                <li><a href="<?= APP_ROOT ?>directors">The Directors</a></li>
             </ul>
         </div>
         <div class="w-1/4">
             <div class="flex flex-col gap-4">
-                <a class="button" href="contact">Contact Us</a>
+                <a class="button" href="<?= APP_ROOT ?>contact">Contact Us</a>
                 <a href="#">info@brulifegreatholdings.com</a>
                 <p>+63 966 465 6998</p>
                 <p>+632 8801 5025</p>

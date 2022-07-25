@@ -47,10 +47,10 @@
         @apply snap-start;
     }
     #projects .list .graphics {
-        @apply inline-block h-[312px] w-[312px];
+        @apply inline-block h-[275px] w-[275px];
     }
     #projects .list .graphics img {
-        @apply h-[312px] w-auto border-[1px] border-neutral-300 rounded-md object-cover;
+        @apply h-[275px] w-auto border-[1px] border-neutral-300 rounded-md object-cover;
     }
     #projects .list .info a {
         @apply text-lg font-semibold;
@@ -59,6 +59,18 @@
         @apply text-sm text-neutral-400 font-light;
     }
 </style>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        document.getElementById("btn-scroll-project").addEventListener("click", function(e) {
+                e.preventDefault();
+                let position =
+                    document.querySelector("#projects .list").offsetTop
+                    - document.querySelector("nav").offsetHeight
+                    - 16;
+                smoothScrollTo(position, 500);
+            });
+    });
+</script>
 
 <?php require_once __DIR__ . "/includes/navbar.php"; ?>
 
@@ -82,7 +94,7 @@
         </div>
     </section>
     <section id="projects">
-        <a href="#" class="block p-4 bg-stone-100 text-center">
+        <a id="btn-scroll-project" href="#" class="block p-4 bg-stone-100 text-center">
             <p><i class="fa-solid fa-angles-down"></i></p>
             <p>Take a peek at our projects</p>
         </a>
