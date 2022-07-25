@@ -100,7 +100,7 @@
     color: white;
 }
 
-/* .custom-button::after {
+.custom-button::after {
     content: "\f04b";
     font-family: "font awesome 5 free";
     font-weight: bold;
@@ -114,7 +114,7 @@
     margin: auto;
     margin-top: 70px;
     margin-left: 20px;
-} */
+}
 
 .custom-video-layout {
     display: flex;
