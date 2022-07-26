@@ -266,8 +266,7 @@
     .card-custom {
         display: flex;
         flex-direction: row;
-        
-        width: 45%;
+        width: 455px;
         height: 250px;
         margin: 20px;
         transition: all 0.3s ease-in-out;
