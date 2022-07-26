@@ -3,7 +3,7 @@
         'name' => 'autoload/namespacer',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '29461bf1c490e4ba4d9894a5980457e96dc81cfb',
+        'reference' => 'e36ecfdeacdb50652e845ff4b698905fd3a22e12',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'autoload/namespacer' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '29461bf1c490e4ba4d9894a5980457e96dc81cfb',
+            'reference' => 'e36ecfdeacdb50652e845ff4b698905fd3a22e12',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

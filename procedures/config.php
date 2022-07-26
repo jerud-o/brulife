@@ -1,6 +1,5 @@
 <?php
 
-// PLEASE HUWAG.
 function createConnection(
     string $db_host = "ucc-csd.tech",
     string $database = "jerud_brulife",

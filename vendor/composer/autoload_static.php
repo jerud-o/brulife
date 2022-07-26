@@ -6,6 +6,16 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitb26d2314f4df2b1e9a1d3333b5a8c82e
 {
+    public static $files = array (
+        '83a09f93c552cbe04c7ce424f1b6ba6d' => __DIR__ . '/..' . '/autoload.php',
+        '27fb9ff3ce935953c4fac431594b71b8' => __DIR__ . '/..' . '/phpmailer/PHPMailer/src/PHPMailer.php',
+        '0393e882402520df1de84283591eba1f' => __DIR__ . '/..' . '/phpmailer/PHPMailer/src/SMTP.php',
+        '88c5ae08a34b85055c1b1282ccc9c4a3' => __DIR__ . '/..' . '/phpmailer/PHPMailer/src/Exception.php',
+        '92082cd4452d1f51ac176cb664bdaa9c' => __DIR__ . '/../..' . '/procedures/config.php',
+        '45b6410b803b7b0b459ee55197408af3' => __DIR__ . '/../..' . '/procedures/utility.php',
+        '8a3dffb307376ba459374c74c1584fea' => __DIR__ . '/../..' . '/models/Project.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'P' => 
         array (

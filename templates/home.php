@@ -35,7 +35,7 @@
         @apply my-4 text-xl font-bold;
     }
     #projects .list header a {
-        @apply ml-1 text-sm font-medium;
+        @apply ml-1 text-sm font-medium hover:text-[color:var(--green)];
     }
     #projects .list section {
         @apply px-6;
