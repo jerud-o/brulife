@@ -20,7 +20,7 @@ if (!$requestFromAPI) {
             include_once $baseDir . "project-template.php";
             break;
         case str_starts_with($uri[$baseIndex], "partners"):
-            $baseDir += "partners/";
+            $baseDir .= "partners/";
 
             switch ($uri[$baseIndex + 1]) {
                 case "arvin":
