@@ -151,8 +151,8 @@ switch (true) {
                 if ($key === 'email' && !isEmailValid($value)) {
                     // validate e-mail here
                     $error[$key] = "E-mail is not formatted correctly";
-                } else if($key == 'phone'){
-                    
+                } else if($key == 'phone' && !isPhoneNumberValid(strval($value))){
+                    echo "mali";
                 }
             }
             
@@ -214,3 +214,12 @@ function isEmailValid($email)
     
     return $isValid;
 }
+
+
+
+
+function isPhoneNumberValid($number){
+    
+        if(!preg_match('/^(09|\+639)\d{9}$/', $number));
+}   
+
