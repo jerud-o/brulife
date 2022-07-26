@@ -108,11 +108,16 @@ switch (true) {
         $query = "SELECT * FROM project WHERE ID = ?";
         $stmt = $conn->prepare($query);
         $stmt->execute([base64_decode($uri[$baseIndex + 1])]);
-        $project = new Project($stmt->fetch());
+        $projectData = $stmt->fetch();
+        $project = ($projectData) ? new Project($projectData) : null ;
 
         if ($requestFromAPI) {
             json($project);
             exit();
+        }
+
+        if($project == null){
+            header("Location: " . APP_ROOT . "404");
         }
         break;
     case str_starts_with($uri[$baseIndex], "contact"):
