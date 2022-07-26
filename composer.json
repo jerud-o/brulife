@@ -2,5 +2,15 @@
     "name": "autoload/namespacer",
     "require": {
         "phpmailer/phpmailer": "^6.6"
+    },
+    "autoload": {
+        "files": [
+            "vendor/phpmailer/PHPMailer/src/PHPMailer.php",
+            "vendor/phpmailer/PHPMailer/src/SMTP.php",
+            "vendor/phpmailer/PHPMailer/src/Exception.php",
+            "procedures/config.php",
+            "procedures/utility.php",
+            "models/Project.php"
+        ]
     }
 }
