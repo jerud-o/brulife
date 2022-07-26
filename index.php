@@ -42,12 +42,12 @@ switch (true) {
 
         if (!empty($_GET)) {
             $filters = array('all', 'subdivision', 'business bldg.', 'hospital', 'malls', 'industrial', 'agricultural');
-
+            $filteredProjectArray = array();
             if (isset($_GET['filter']) && in_array($_GET['filter'], $filters)) {
                 $_GET['filter'] = htmlspecialchars(strtolower($_GET['filter']));
 
                 if ($_GET['filter'] != "all") {
-                    $filteredProjectArray = array();
+                    
 
                     foreach ($projectArray as $var) {
                         if (in_array($_GET['filter'], $var->tags)) {
