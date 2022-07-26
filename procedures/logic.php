@@ -39,12 +39,14 @@ switch (true) {
         $query = "SELECT * FROM project";
         $stmt = $conn->prepare($query);
         $stmt->execute();
+        $_GET['p'] = (int)$_GET['p'];
+        $hasGET = !empty($_GET);
         
         foreach ($stmt as $row) {
             array_push($projectArray, new Project($row));
         }
 
-        if (!empty($_GET)) {
+        if ($hasGET) {
             $filters = array('all', 'subdivision', 'business bldg.', 'hospital', 'malls', 'industrial', 'agricultural');
             $filteredProjectArray = array();
 
@@ -83,7 +85,9 @@ switch (true) {
                     array_push($projectArrayFinal, $filteredProjectArray[$i]);
                 }
             }
-        } else {
+        }
+
+        if (!$hasGET || ($_GET['p'] < 1 || $_GET['p'] > $pages)) {
             if ($requestFromAPI) {
                 header("Location: " . APP_ROOT . "api/projects?p=1&filter=all");
             } else {

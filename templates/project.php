@@ -1,22 +1,3 @@
-
-<?php
-
-$hasGET = (int)$_GET['p'];
-
-if ($hasGET < 1 || $hasGET > $pages){
-            header("Location: " . APP_ROOT . "projects?p=1&filter=all");
-            exit();
-}
-
-$filterValid = array("all", "subdivision", "business bldg.", "hospital", "malls", "industrial", "agricultural");
-
-// if (in_array($_GET['filter'], $filterValid )){
-//     header("Location: " . APP_ROOT . "projects?p=1&filter=all");
-//     exit();
-// }
-
- ?>
-
 <?php require_once __DIR__ . "/includes/header.php"; ?>
 
 <script src="assets/js/dropdown.js"></script>
