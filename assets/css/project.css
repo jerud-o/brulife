@@ -47,7 +47,7 @@
     z-index: 1;
 }
 
-.custom-dd-content a {
+.custom-dd-content li{
     color: black;
     padding: 10px 10px;
     text-decoration: none;
@@ -60,6 +60,14 @@
 
 .custom-show {
     display: block;
+}
+
+.m-active{
+    color: #018427;
+}
+
+.active{
+    color: #7df69f;
 }
 
 .filter-list-custom {
@@ -86,11 +94,6 @@
     justify-content: center;
     margin: auto;
 } */
-
-.disabled {
-    pointer-events: none;
-    cursor: default;
-}
 
 .card-custom {
     display: flex;
@@ -149,8 +152,8 @@
 .btn-custom:active {
     transform: scale(0.9);
     color: white;
-    background-color: #004f00;
-    border: 2px solid #004f00;
+    background-color: #018427;
+    border: 2px solid #018427;
 }
 
 .custom-pagination{
@@ -163,19 +166,19 @@
 }
 
 .custom-pagination a{
-    color: white;
+    color: black;
     padding: 8px 16px;
     text-decoration: none;
     border: 1px solid white;
+    background-color: white;
 }
 
 .custom-pagination a.active{
-    background-color: #7df69f;
+    background-color: #018427;
     color: white;
-    border: 1px solid #7df69f;
 }
 .custom-pagination a:hover:not(.active) {
-    color: white;
+    color: black;
     background-color: #7df69f;
 }
 
@@ -199,6 +202,11 @@
     content: "/f101";
     font-family: "font awesome 5 free";
     font-weight: bold;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
 }
 
 /* Small Device */
@@ -305,8 +313,8 @@
 
     .btn-custom:hover {
         color: white;
-        border: 2px solid #004f00;
-        background-color: #004f00;
+        border: 2px solid #018427;
+        background-color: #018427;
     }
 
     .btn-custom:active {
