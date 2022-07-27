@@ -70,6 +70,10 @@ switch (true) {
                 $pages = count($filteredProjectArray) / 10;
             }
 
+            if ($pages == 0){
+                $pages = 1;
+            }
+
             if (isset($_GET['p']) && $_GET['p'] >= 1 && $_GET['p'] <= $pages) {
                 $projectArrayFinal = array();
                 $start = ($_GET['p'] - 1) * 10;
