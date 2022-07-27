@@ -78,7 +78,9 @@
                 <a class="custom-previous-icon" href="<?= APP_ROOT . "projects?p=" . $backValue . "&filter=" . $_GET['filter'] ?>"><i class="fa-solid fa-angles-left"></i></a>
             <?php endif ?>
             <?php for ($i = 1; $i <= $pages; $i++) : ?>
-                <a href="<?= APP_ROOT . "projects?p=" . $i . "&filter=" . $_GET['filter'] ?>" class="<?php if ($i == $_GET['p']) {echo "active";} ?>"><?= $i ?></a>
+                <a href="<?= APP_ROOT . "projects?p=" . $i . "&filter=" . $_GET['filter'] ?>" class="<?php if ($i == $_GET['p']) {
+                                                                                                            echo "active";
+                                                                                                        } ?>"><?= $i ?></a>
             <?php endfor ?>
             <?php if ($nextValue > $pages) : ?>
                 <a class="custom-next-icon disabled" href="#"><i class="fa-solid fa-angles-right"></i></a>
