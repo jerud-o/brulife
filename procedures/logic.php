@@ -50,17 +50,22 @@ switch (true) {
             $filters = array('all', 'subdivision', 'business bldg.', 'hospital', 'malls', 'industrial', 'agricultural');
             $filteredProjectArray = array();
 
-            if (isset($_GET['filter']) && in_array($_GET['filter'], $filters)) {
-                $_GET['filter'] = htmlspecialchars(strtolower($_GET['filter']));
+            if (isset($_GET['filter'])){
+                if (in_array($_GET['filter'], $filters)) {
+                    $_GET['filter'] = htmlspecialchars(strtolower($_GET['filter']));
 
-                if ($_GET['filter'] != "all") {
-                    foreach ($projectArray as $var) {
-                        if (in_array($_GET['filter'], $var->tags)) {
-                            array_push($filteredProjectArray, $var);
+                    if ($_GET['filter'] != "all") {
+                        foreach ($projectArray as $var) {
+                            if (in_array($_GET['filter'], $var->tags)) {
+                                array_push($filteredProjectArray, $var);
+                            }
                         }
+                    } else {
+                        $filteredProjectArray = $projectArray;
                     }
                 } else {
-                    $filteredProjectArray = $projectArray;
+                    header("Location: " . APP_ROOT . "projects?p=1&filter=all");
+                    exit();
                 }
             }
 
@@ -68,6 +73,10 @@ switch (true) {
                 $pages = (count($filteredProjectArray) / 10) + 1;
             } else {
                 $pages = count($filteredProjectArray) / 10;
+            }
+
+            if ($pages == 0){
+                $pages = 1;
             }
 
             if (isset($_GET['p']) && $_GET['p'] >= 1 && $_GET['p'] <= $pages) {
@@ -181,6 +190,7 @@ switch (true) {
                 } catch (Exception $e) {
                     $sentStatus = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
                 }
+                echo $sentStatus;
             }
         }
         break;

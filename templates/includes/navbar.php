@@ -20,11 +20,11 @@
             <li class="nav-item dropdown">
                 <a tabindex="0">Partners</a>
                 <ul class="dropdown-menu">
-                    <li class="dropdown-item"><a href="#">Arvin Construction</a></li>
-                    <li class="dropdown-item"><a href="<?= APP_ROOT ?>partners/devine">Divine Chemical</a></li>
-                    <li class="dropdown-item"><a href="#">Graymark</a></li>
-                    <li class="dropdown-item"><a href="#">Jaru Farm</a></li>
-                    <li class="dropdown-item"><a href="#">Genco Engineering Services</a></li>
+                    <li class="dropdown-item"><a href="<?= APP_ROOT ?>partners/arvyn">Arvyn Construction</a></li>
+                    <li class="dropdown-item"><a href="<?= APP_ROOT ?>partners/devine">Devine Chemical Resources</a></li>
+                    <li class="dropdown-item"><a href="<?= APP_ROOT ?>partners/graymark">Graymark</a></li>
+                    <li class="dropdown-item"><a href="<?= APP_ROOT ?>partners/jarufarm">Jaru Farm</a></li>
+                    <li class="dropdown-item"><a href="<?= APP_ROOT ?>partners/aemm">Genco Engineering Services</a></li>
                     <li class="dropdown-item"><a href="<?= APP_ROOT ?>partners/brucgt">BRU Consumer Goods Trading</a></li>
                 </ul>
             </li>
