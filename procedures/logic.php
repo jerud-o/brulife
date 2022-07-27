@@ -147,8 +147,13 @@ switch (true) {
                 if ($key === 'email' && !isEmailValid($value)) {
                     // validate e-mail here
                     $error[$key] = "E-mail is not formatted correctly";
-                } else if($key == 'phone'){
-                    
+                } else if($key == 'phone' && !isPhoneNumberValid($value)){
+                    $error[$key] = "Invalid Phone number";
+                } else if (
+                    (str_ends_with($key, 'name') && (strlen($value) <= 5 || strlen($value) > 50)) 
+                    || ($key === 'message' && (strlen($value) <= 30 || strlen($value) > 500))
+                ) {
+                    $error[$key] = "Input too short/too long";
                 }
             }
             
@@ -173,15 +178,17 @@ switch (true) {
 
                     //Content
                     $mail->isHTML(true);
-                    $mail->Subject = "New message sent from BRULife Contact Page";
-                    $mail->Body    = "Name of the recipient: " . ucwords($_POST['firstname']) . " " . ucwords($_POST['lastname']) . "(" . $_POST['phone'] . ")"
-                                    . "<br><br> Message:" . $_POST['message'];
+                    $mail->Subject = 'New message sent from BRULife Contact Page';
+                    $mail->Body    = 'Message from: '. ucwords(strtolower($_POST['firstname'])) .' '. ucwords(strtolower($_POST['lastname'])) . '<br><br>'
+                    . 'Phone number: ' . $_POST['phone'] . '<br>'
+                    . 'E-mail: ' . $_POST['email']. '<br>'
+                    . 'Message: '. $_POST['message'];
                     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
                     $mail->send();
-                    // echo 'Message has been sent';
+                    $sentStatus = 'Message has been sent';
                 } catch (Exception $e) {
-                    // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+                    $sentStatus = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
                 }
             }
         }

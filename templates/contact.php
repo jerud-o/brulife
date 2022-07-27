@@ -1,6 +1,9 @@
 <?php require_once __DIR__ . "/includes/header.php"; ?>
 <?php require_once __DIR__ . "/includes/navbar.php"; ?>
-  <div class="mt-0 py-20 bg-primary-green p-4 px-20 flex flex-col gap-4 md:flex-row md:mt-14 max-w-screen-lg mx-auto">
+<?php if(isset($sentStatus)):?>
+            <div><?= $sentStatus?></div>
+          <?php endif ?>
+  <div class="mt-0 py-20 bg-primary-green p-4 px-20 flex flex-col gap-4 md:flex-row md:my-14 max-w-screen-lg mx-auto">
     <div class="basis-1/2">
       <h3 class="text-xl text-white font-medium">Contact Information</h3>
       <div class="mt-6 flex">
@@ -21,16 +24,42 @@
 
       </div>
     </div>
-    <div>
+
+    <div class="basis-1/2">
     <h3 class="text-xl text-white font-medium">Contact Us</h3>
+
       <form class="mt-6 grid grid-cols-2 gap-2 pr-8" action="<?= APP_ROOT . "contact"?>" method="POST">
-        <input autocomplete="off" class="personal-info" placeholder="First Name" type="text" name="firstname">
-        <input autocomplete="off" class="personal-info" placeholder="Last Name" type="text" name="lastname">
-        <input autocomplete="off" class="personal-info" placeholder="E-mail" type="email" name="email">
-        <input autocomplete="off" class="personal-info" placeholder="Phone Number" type="text" name="phone">
-        <textarea class="personal-info  resize-none col-span-2"  placeholder="Message:" name="message" rows="3"></textarea>
-        <!-- <button class="btn glass" type="submit" name="submit">Submit</button> -->
-        <button class="transition duration-150 py-2 px-8 w-fit text-white font-medium border border-white hover:bg-white hover:text-primary-green" type="submit">Submit</button>
+        <div class="col-span-2 md:col-span-1">
+          <input class="personal-info w-full" autocomplete="off"  placeholder="First Name" type="text" name="firstname" <?php if(isset($_POST['firstname'])):?> value = "<?= $_POST['firstname']?>" <?php endif?>>
+          <?php if(isset($error['firstname'])):?> 
+            <div><?= $error['firstname']?></div>
+          <?php endif ?>
+        </div>
+        <div class="col-span-2 md:col-span-1">
+          <input class="personal-info w-full" autocomplete="off"  placeholder="Last Name" type="text" name="lastname"<?php if(isset($_POST['lastname'])):?> value = "<?= $_POST['lastname']?>" <?php endif?>>
+          <?php if(isset($error['lastname'])):?>
+            <div><?= $error["lastname"]?></div>
+          <?php endif ?>
+        </div>
+        <div class="col-span-2 md:col-span-1">
+          <input class="personal-info w-full" autocomplete="off"  placeholder="E-mail" type="email" name="email"<?php if(isset($_POST['email'])):?> value = "<?= $_POST['email']?>" <?php endif?>>
+          <?php if(isset($error['email'])):?>
+            <div><?= $error["email"]?></div>
+          <?php endif ?>
+        </div>
+        <div class="col-span-2 md:col-span-1">
+          <input class="personal-info w-full" autocomplete="off"  placeholder="Phone Number" type="text" name="phone"<?php if(isset($_POST['phone'])):?> value = "<?= $_POST['phone']?>" <?php endif?>>
+          <?php if(isset($error['phone'])):?>
+            <div><?= $error["phone"]?></div>
+          <?php endif ?>
+        </div>
+        <div class="col-span-2">
+          <textarea class="w-full placeholder:personal-info  resize-none " placeholder="Message:" name="message" rows="3"><?php if(isset($_POST['message'])):?> <?= $_POST['message']?> <?php endif?></textarea>
+          <?php if(isset($error['message'])):?>
+            <div><?= $error["message"]?></div><br>
+          <?php endif ?>
+        </div>
+        <button class="transition duration-150 py-2 px-8 w-fit text-white font-medium border border-white hover:bg-white col-start-1 col-end-2 hover:text-primary-green" type="submit">Submit</button>
       </form>
     </div>
 

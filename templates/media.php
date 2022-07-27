@@ -9,7 +9,7 @@
 <div class="mb-[40px]">
 
     <div class="custom-content-wrapper">
-        <div class="custom-bg-img bg-[url('assets/img/media/brutv-bg.jpg')]"></div>
+        <div style="background-image: url('assets/img/media/brutv-bg.jpg');" class="custom-bg-img"></div>
         <div class="custom-content">
             <div class="custom-header">
                 <img class="z-10 custom-logo" src="assets/img/media/brutv-logo.png" alt="bru-logo">

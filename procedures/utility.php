@@ -29,6 +29,6 @@ function isEmailValid($email)
 }
 
 function isPhoneNumberValid($number){ 
-    if(!preg_match('/^(09|\+639)\d{9}$/', $number));
+     return preg_match('/^(09|\+639)\d{9}$/', $number);
 }
 ?>
