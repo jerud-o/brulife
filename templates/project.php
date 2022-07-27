@@ -48,6 +48,7 @@
         </div>
     </div>
 
+    
     <?php if (empty($projectArrayFinal)) : ?>
         <div class="flex justify-center items-center text-[70px] text-white font-bold p-[50px]">
             <p>No Items Found.</p>
