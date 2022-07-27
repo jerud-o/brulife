@@ -50,17 +50,22 @@ switch (true) {
             $filters = array('all', 'subdivision', 'business bldg.', 'hospital', 'malls', 'industrial', 'agricultural');
             $filteredProjectArray = array();
 
-            if (isset($_GET['filter']) && in_array($_GET['filter'], $filters)) {
-                $_GET['filter'] = htmlspecialchars(strtolower($_GET['filter']));
+            if (isset($_GET['filter'])){
+                if (in_array($_GET['filter'], $filters)) {
+                    $_GET['filter'] = htmlspecialchars(strtolower($_GET['filter']));
 
-                if ($_GET['filter'] != "all") {
-                    foreach ($projectArray as $var) {
-                        if (in_array($_GET['filter'], $var->tags)) {
-                            array_push($filteredProjectArray, $var);
+                    if ($_GET['filter'] != "all") {
+                        foreach ($projectArray as $var) {
+                            if (in_array($_GET['filter'], $var->tags)) {
+                                array_push($filteredProjectArray, $var);
+                            }
                         }
+                    } else {
+                        $filteredProjectArray = $projectArray;
                     }
                 } else {
-                    $filteredProjectArray = $projectArray;
+                    header("Location: " . APP_ROOT . "projects?p=1&filter=all");
+                    exit();
                 }
             }
 
