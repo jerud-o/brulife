@@ -53,8 +53,118 @@ body {
   mb-2
 }
 
-
-/* Partners - ACI */
+/*Header and Footer*/
+.nav-menu,
+        .dropdown-menu {
+            @apply bg-white;
+        }
+        .dropdown {
+            @apply relative cursor-pointer;
+        }
+        /* Transition and Fonts */
+        .nav-menu a {
+            @apply transition-all duration-100;
+        }
+        /* Navbar Items */
+        .nav-item {
+            @apply w-full
+                lg:w-auto;
+        }
+        .nav-item > a {
+            @apply hidden px-4 pt-4 pb-2 border-b-[3px] border-b-transparent font-semibold text-center
+                lg:inline-block;
+        }
+        .nav-menu.focused .nav-item > a,
+        .nav-menu.focused .nav-item > a {
+            @apply block;
+        }
+        .nav-item:not(.active) > a:hover,
+        .dropdown:not(.active):hover > a {
+            @apply bg-primary-green border-b-primary-green text-white;
+        }
+        .nav-item.active > a {
+            @apply text-primary-green border-b-primary-green;
+        }
+        /* Dropdown Items */
+        .dropdown {
+            @apply relative;
+        }
+        .dropdown > a::after {
+            @apply inline-block ml-2 text-xs font-bold;
+            content: "\f107";
+            font-family: "Font Awesome 5 Free";
+        }
+        .dropdown-menu {
+            @apply hidden border-[1px] border-slate-200
+                lg:absolute lg:top-full lg:right-0 lg:w-[200%];
+        }
+        .dropdown.focused > a {
+            @apply text-primary-green border-b-primary-green;
+        }
+        .dropdown.focused .dropdown-menu {
+            @apply block;
+        }
+        .dropdown:hover .dropdown-menu {
+            @apply lg:block;
+        }
+        .dropdown-item > a {
+            @apply block p-4
+                hover:border-l-[4px] hover:border-l-primary-green hover:text-primary-green font-semibold;
+        }
+        .dropdown-item:not(:last-of-type) > a {
+            @apply border-b-[1px] border-b-slate-200;
+        }
+        /* Navbar Item: Logo */
+        .nav-logo {
+            @apply mr-auto;
+        }
+        .nav-logo img {
+            @apply h-[80px] m-2;
+        }
+        /* Navbar Item: footer-contact Us Button */
+        .nav-button {
+            @apply hidden px-6 py-4 bg-primary-green rounded-full text-white font-bold
+                sm:block lg:hidden;
+        }
+        .nav-item.button {
+            @apply sm:hidden lg:inline-block;
+        }
+        /* Navbar Item: Menu Toggle */
+        .nav-toggle a {
+            @apply h-full flex items-center px-6 py-4 text-2xl font-semibold
+                md:px-6
+                lg:hidden;
+        }
+        footer nav > div {
+            @apply p-2 w-1/4;
+        }
+        footer h6 {
+            @apply px-4 py-2 text-sm font-bold uppercase;
+        }
+        footer nav > div:not(.footer-contact) ul a {
+            @apply block px-4 py-2
+                hover:bg-primary-green hover:text-white hover:font-medium;
+        }
+        footer nav > .footer-contact .button {
+            @apply transition-colors duration-300 p-4 border-2 border-primary-green text-primary-green text-center font-bold tracking-widest uppercase
+                hover:bg-primary-green hover:text-white;
+        }
+        footer nav > .footer-contact li:not(:first-of-type) {
+            @apply flex flex-col;
+        }
+        footer nav > .footer-contact li:not(:first-of-type) a {
+            @apply transition-colors hover:text-primary-green;
+        }
+        footer nav > .footer-contact li:not(:first-of-type) i {
+            @apply text-xl text-primary-green;
+        }
+        footer nav a {
+            @apply block;
+        }
+        footer > div .links .link-item {
+            @apply h-[50px] w-[50px];
+        }
+        /*  */
 
 
 

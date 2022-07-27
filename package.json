@@ -5,6 +5,9 @@
     "tailwindcss": "^3.1.5"
   },
   "scripts": {
-    "css": "npx tailwindcss -i assets/css/input.css -o assets/css/output.css -w"
+    "css": "npx tailwindcss -i assets/css/input.css -o assets/css/output.css -w",
+    "css-about": "npx tailwindcss -i assets/css/about-input.css -o assets/css/about-output.css -w",
+    "css-directors": "npx tailwindcss -i assets/css/directors-input.css -o assets/css/directors-output.css -w",
+    "css-home": "npx tailwindcss -i assets/css/home-input.css -o assets/css/home-output.css -w"
   }
 }

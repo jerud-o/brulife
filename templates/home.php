@@ -2,6 +2,7 @@
 
 <title>BRULife Greatholdings Corporation</title>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
 <style type="text/css">
     #welcome {
         background:
@@ -17,48 +18,9 @@
     .thin-scrollbar::-webkit-scrollbar { height: 5px; }
     .thin-scrollbar::-webkit-scrollbar-track { background-color: #f1f1f1; border-radius: 3px; }
     .thin-scrollbar::-webkit-scrollbar-thumb { background-color: rgb(179, 179, 179); border-radius: 3px; }
+   
 </style>
-<style type="text/tailwindcss">
-    * {
-        @apply font-['Lato'];
-    }
-    body > .grid > * {
-        @apply col-span-12 relative;
-    }
-    #welcome {
-        @apply h-[75vh] p-6 text-white;
-    }
-    #welcome h2 {
-        @apply text-[10vw] sm:text-[7vw] md:text-[6vw] lg:text-[5vw] font-black uppercase tracking-wider;
-    }
-    #projects .list header {
-        @apply my-4 text-xl font-bold;
-    }
-    #projects .list header a {
-        @apply ml-1 text-sm font-medium hover:text-[color:var(--green)];
-    }
-    #projects .list section {
-        @apply px-6;
-    }
-    #projects .list section:first-of-type > div {
-        @apply pb-4 overflow-auto flex gap-4 justify-start snap-x;
-    }
-    #projects .list .list-item-custom {
-        @apply snap-start;
-    }
-    #projects .list .graphics {
-        @apply inline-block h-[275px] w-[275px];
-    }
-    #projects .list .graphics img {
-        @apply h-[275px] w-auto border-[1px] border-neutral-300 rounded-md object-cover;
-    }
-    #projects .list .info a {
-        @apply text-lg font-semibold;
-    }
-    #projects .list .info p {
-        @apply text-sm text-neutral-400 font-light;
-    }
-</style>
+ <link href="<?= APP_ROOT . 'assets/css/home-output.css?' . uniqid() ?>" rel="stylesheet">
 <script>
     document.addEventListener("DOMContentLoaded", function(event) {
         document.getElementById("btn-scroll-project").addEventListener("click", function(e) {
