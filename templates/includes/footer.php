@@ -12,12 +12,12 @@
         <div>
             <h6>Partners</h6>
             <ul>
-                <li><a href="#">Arvin Construction</a></li>
-                <li><a href="#">Divine Medical</a></li>
-                <li><a href="#">Graymark</a></li>
-                <li><a href="#">Jaru Farm</a></li>
-                <li><a href="#">Genco Engineering Services</a></li>
-                <li><a href="#">BRU Consumer Goods Trading</a></li>
+                <li><a href="<?= APP_ROOT ?>partners/arvyn">Arvyn Construction</a></li>
+                <li><a href="<?= APP_ROOT ?>partners/devine">Devine Chemical Resources</a></li>
+                <li><a href="<?= APP_ROOT ?>partners/graymark">Graymark</a></li>
+                <li><a href="<?= APP_ROOT ?>partners/jarufarm">Jaru Farm</a></li>
+                <li><a href="<?= APP_ROOT ?>partners/aemm">Genco Engineering Services</a></li>
+                <li><a href="<?= APP_ROOT ?>partners/brucgt">BRU Consumer Goods Trading</a></li>
             </ul>
         </div>
         <div>

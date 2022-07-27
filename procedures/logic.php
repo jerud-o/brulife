@@ -164,14 +164,15 @@ switch (true) {
 
                     //Content
                     $mail->isHTML(true);
-                    $mail->Subject = 'Here is the subject';
-                    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-                    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+                    $mail->Subject = "New message sent from BRULife Contact Page";
+                    $mail->Body    = "Name of the recipient: " . ucwords($_POST['firstname']) . " " . ucwords($_POST['lastname']) . "(" . $_POST['phone'] . ")"
+                                    . "<br><br> Message:" . $_POST['message'];
+                    // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
                     $mail->send();
-                    echo 'Message has been sent';
+                    // echo 'Message has been sent';
                 } catch (Exception $e) {
-                    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+                    // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
                 }
             }
         }

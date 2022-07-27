@@ -23,7 +23,7 @@ if (!$requestFromAPI) {
             $baseDir .= "partners/";
 
             switch ($uri[$baseIndex + 1]) {
-                case "arvin":
+                case "arvyn":
                     include_once $baseDir . "aci.php";
                     break;
                 case "devine":
@@ -41,6 +41,9 @@ if (!$requestFromAPI) {
                 case "brucgt":
                     include_once $baseDir . "brucgt.php";
                     break;   
+                default:
+                    header("Location: " . APP_ROOT . "404");
+                    exit();
             }
             break;
         case $uri[$baseIndex] === "careers":

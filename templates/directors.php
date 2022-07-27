@@ -49,7 +49,7 @@
         @apply text-lg font-semibold;
     }
     #directors .card-custom .info p {
-        @apply text-sm text-neutral-400 font-light;
+        @apply text-sm text-neutral-500 font-light;
     }
 </style>
 
