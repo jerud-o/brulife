@@ -190,7 +190,6 @@ switch (true) {
                 } catch (Exception $e) {
                     $sentStatus = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
                 }
-                echo $sentStatus;
             }
         }
         break;

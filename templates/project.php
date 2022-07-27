@@ -1,13 +1,14 @@
 <?php require_once __DIR__ . "/includes/header.php"; ?>
 
 <script src="assets/js/dropdown.js"></script>
+<link rel="stylesheet" href="assets/css/output.css">
 <link rel="stylesheet" href="assets/css/project.css">
 <link rel="icon" href="assets/img/icon-banner.png">
 <title>Upcoming Projects</title>
 
 <?php require_once __DIR__ . "/includes/navbar.php"; ?>
 
-<div class="custom-content-bg bg-[url('assets/img/project/bg-img-02.jpg')]">
+<div style="background-image:url('assets/img/project/bg-img-02.jpg')" class="custom-content-bg">
     <div class="lg:hidden custom-dropdown">
         <button onclick="myFunction()" class="custom-dropbtn">Show All</button>
         <div id="myDropdown" class="custom-dd-content">
