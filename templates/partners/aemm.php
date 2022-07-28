@@ -9,7 +9,7 @@
       <img class="" src="../assets/img/aemm.jpg">
    </div>
 </div>
-<div class="text-white p-4 mx-auto lg:flex w-11/12 lg:w-4/6 lg:p-8 bg-primary-green">
+<div class="text-white p-4 mx-auto lg:flex w-11/12 lg:w-4/6 lg:p-8 lg:my-12 bg-primary-green">
 
    <!-- About Company -->
    <div class="about">

@@ -1,6 +1,6 @@
 <?php require_once __DIR__ . "/../includes/header.php"; ?>
 <?php require_once __DIR__ . "/../includes/navbar.php"; ?>
-<div class="bg-[url(assets/img/engineers.jpg)] bg-no-repeat bg-cover fixed top-0 blur-[3px] h-[110%] w-full z-[-1]"></div>
+<div style="background-image: url(<?=APP_ROOT . 'assets/img/engineers.jpg'?>);" class="bg-no-repeat bg-cover fixed top-0 blur-[3px] h-[110%] w-full z-[-1]"></div>
 <div class="h-32 mb-4 lg:py-12 lg:h-72 xl:h-80">
    <img src="../assets/img/aci.jpg" alt="aci-banner" class="h-full w-full">
 </div>

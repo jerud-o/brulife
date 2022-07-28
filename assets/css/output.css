@@ -914,20 +914,20 @@ video {
   width: 50px;
 }
 
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-1 {
-  width: 0.25rem;
-}
-
 .w-11 {
   width: 2.75rem;
 }
 
+.w-2 {
+  width: 0.5rem;
+}
+
 .w-3 {
   width: 0.75rem;
+}
+
+.w-1 {
+  width: 0.25rem;
 }
 
 .w-4 {
@@ -1205,20 +1205,32 @@ video {
   background-image: url(assets/img/career-bg.jpg);
 }
 
-.bg-\[url\(\'assets\/img\/media\/brutv-bg\.jpg\'\)\] {
-  background-image: url('assets/img/media/brutv-bg.jpg');
-}
-
-.bg-\[url\(\'assets\/img\/project\/bg-img-02\.jpg\'\)\] {
-  background-image: url('assets/img/project/bg-img-02.jpg');
-}
-
 .bg-\[url\(assets\/img\/engineers\.jpg\)\] {
   background-image: url(assets/img/engineers.jpg);
 }
 
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\<\?\=assets\/img\/career-bg\.jpg\)\] {
+  background-image: url(<?=assets/img/career-bg.jpg);
+}
+
+.bg-\[url\(\<\?\=\?\>assets\/img\/career-bg\.jpg\)\] {
+  background-image: url(<?=?>assets/img/career-bg.jpg);
+}
+
+.bg-\[url\(\<\?\=APP_ROOT\?\>assets\/img\/career-bg\.jpg\)\] {
+  background-image: url(<?=APP_ROOT?>assets/img/career-bg.jpg);
+}
+
+.bg-\[url\(\<\?\=APP_ROOT\.\?\>assets\/img\/career-bg\.jpg\)\] {
+  background-image: url(<?=APP_ROOT.?>assets/img/career-bg.jpg);
+}
+
+.bg-\[url\(\)\] {
+  background-image: url();
 }
 
 .from-\[\#000000cc\] {
@@ -2179,6 +2191,10 @@ footer > div .links .link-item {
     margin-bottom: 3rem;
   }
 
+  .md\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2327,6 +2343,12 @@ footer > div .links .link-item {
   .md\:text-\[6vw\] {
     font-size: 6vw;
   }
+
+  @media (min-width: 640px) {
+    .md\:sm\:p-12 {
+      padding: 3rem;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2346,8 +2368,17 @@ footer > div .links .link-item {
     right: 0px;
   }
 
+  .lg\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
   .lg\:mb-8 {
     margin-bottom: 2rem;
+  }
+
+  .lg\:mb-12 {
+    margin-bottom: 3rem;
   }
 
   .lg\:block {
