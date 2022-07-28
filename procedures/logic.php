@@ -69,15 +69,14 @@ switch (true) {
                 }
             }
 
-            if (count($filteredProjectArray) % 10) {
-                $pages = (count($filteredProjectArray) / 10) + 1;
+            $pageCount = count($filteredProjectArray);
+
+            if (($pageCount % 10) || ($pageCount === 0)) {
+                $pages = ($pageCount / 10) + 1;
             } else {
-                $pages = count($filteredProjectArray) / 10;
+                $pages = $pageCount / 10;
             }
 
-            if ($pages == 0){
-                $pages = 1;
-            }
 
             if (isset($_GET['p']) && $_GET['p'] >= 1 && $_GET['p'] <= $pages) {
                 $projectArrayFinal = array();
@@ -86,8 +85,8 @@ switch (true) {
                 $backValue = $_GET['p'] - 1;
                 $nextValue = $_GET['p'] + 1;
 
-                if ($end > count($filteredProjectArray)) {
-                    $end = count($filteredProjectArray);
+                if ($end > $pageCount) {
+                    $end = $pageCount;
                 }
 
                 for ($i = $start; $i < $end; $i++) {

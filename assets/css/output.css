@@ -1664,12 +1664,6 @@ video {
 }
 
 /* Contact */
-
-body {
-  --tw-bg-opacity: 1;
-  background-color: rgb(224 224 224 / var(--tw-bg-opacity));
-}
-
 .personal-info {
   border-width: 1px;
   --tw-border-opacity: 1;

@@ -24,7 +24,7 @@
                     <li class="dropdown-item"><a href="<?= APP_ROOT ?>partners/devine">Devine Chemical Resources</a></li>
                     <li class="dropdown-item"><a href="<?= APP_ROOT ?>partners/graymark">Graymark</a></li>
                     <li class="dropdown-item"><a href="<?= APP_ROOT ?>partners/jarufarm">Jaru Farm</a></li>
-                    <li class="dropdown-item"><a href="<?= APP_ROOT ?>partners/aemm">Genco Engineering Services</a></li>
+                    <li class="dropdown-item"><a href="<?= APP_ROOT ?>partners/aemm">AEMM Gencon Engineering Services</a></li>
                     <li class="dropdown-item"><a href="<?= APP_ROOT ?>partners/brucgt">BRU Consumer Goods Trading</a></li>
                 </ul>
             </li>

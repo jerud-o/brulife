@@ -1,8 +1,8 @@
 <?php require_once __DIR__ . "/includes/header.php"; ?>
 
 <script src="assets/js/dropdown.js"></script>
-<link rel="stylesheet" href="assets/css/output.css">
 <link rel="stylesheet" href="assets/css/project.css">
+<link rel="stylesheet" href="assets/css/output.css">
 <link rel="icon" href="assets/img/icon-banner.png">
 <title>Upcoming Projects</title>
 
@@ -10,7 +10,7 @@
 
 <div style="background-image:url('assets/img/project/bg-img-02.jpg')" class="custom-content-bg">
     <div class="lg:hidden custom-dropdown">
-        <button onclick="myFunction()" class="custom-dropbtn">Show All</button>
+        <button onclick="myFunction()" class="custom-dropbtn"><?= ucwords($_GET['filter']) ?></button>
         <div id="myDropdown" class="custom-dd-content">
             <a href="<?= APP_ROOT . "projects?p=1&filter=all" ?>" <?php if ($_GET['filter'] == "all") : ?>class="m-active" <?php endif ?>>
                 <li>Show All</li>
@@ -78,11 +78,11 @@
             <?php else : ?>
                 <a class="custom-previous-icon" href="<?= APP_ROOT . "projects?p=" . $backValue . "&filter=" . $_GET['filter'] ?>"><i class="fa-solid fa-angles-left"></i></a>
             <?php endif ?>
+            
             <?php for ($i = 1; $i <= $pages; $i++) : ?>
-                <a href="<?= APP_ROOT . "projects?p=" . $i . "&filter=" . $_GET['filter'] ?>" class="<?php if ($i == $_GET['p']) {
-                                                                                                            echo "active";
-                                                                                                        } ?>"><?= $i ?></a>
+                <a href="<?= APP_ROOT . "projects?p=" . $i . "&filter=" . $_GET['filter'] ?>" class="<?php if ($i == $_GET['p']) { echo "active"; } ?>"><?= $i ?></a>
             <?php endfor ?>
+
             <?php if ($nextValue > $pages) : ?>
                 <a class="custom-next-icon disabled" href="#"><i class="fa-solid fa-angles-right"></i></a>
             <?php else : ?>

@@ -8,4 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="<?= APP_ROOT ?>assets/img/icon-banner.png">
     <link href="<?= APP_ROOT . 'assets/css/output.css?' . uniqid() ?>" rel="stylesheet">
-    
+    <style>
+        body {
+            background-image: url("<?= APP_ROOT ?>assets/img/bg.png");
+            background-repeat: repeat;
+            background-position: center;
+            background-size: 50%;
+        }
+    </style>
