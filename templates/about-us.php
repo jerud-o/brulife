@@ -141,20 +141,8 @@
                 <div>
                     <p>The company has a long-term investment perspective and prefers to grow organically through acquisitions in fields where the management has significant experience. The company makes most investments using its own equity capital, which allows optimum flexibility in terms of financing, and consequently swift investment decisions.</p>
                     <p>BRULife Great Holdings maintains close relationships with existing investment structures, funds, and asset managers, and is perpetually devoting efforts to developing its networks in order to identify appropriate investment opportunities.</p>
+                    <p>BRULife Great Holdings also maintains a strategic relationship with their partner company, BRULife a private holding company dedicated to retail banking.</p>
                 </div>
-            </div>
-        </div>
-        <div class="partners">
-            <div>
-                <p>BRULife Great Holdings also maintains a strategic relationship with their partner company, BRULife a private holding company dedicated to retail banking.</p>
-            </div>
-            <div class="graphics">
-                <img src="<?= APP_ROOT ?>assets/img/logo-banner.png" alt="demo-logo">
-                <img src="<?= APP_ROOT ?>assets/img/logo-banner.png" alt="demo-logo">
-                <img src="<?= APP_ROOT ?>assets/img/logo-banner.png" alt="demo-logo">
-                <img src="<?= APP_ROOT ?>assets/img/logo-banner.png" alt="demo-logo">
-                <img src="<?= APP_ROOT ?>assets/img/logo-banner.png" alt="demo-logo">
-                <img src="<?= APP_ROOT ?>assets/img/logo-banner.png" alt="demo-logo">
             </div>
         </div>
     </section>

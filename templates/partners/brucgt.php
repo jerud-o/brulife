@@ -9,7 +9,7 @@
       <img class="mx-auto h-full md:border-slate-300 md:rounded-md md:border-[6px]" src="../assets/img/brucgt.jpg">
     </div>
   </div>
-  <div class="text-white p-4 sm:w-4/5 xl:w-4/6 sm:flex justify-center gap-12 md:p-12 mx-auto bg-primary-green">
+  <div class="text-white p-4 mb-8 sm:w-4/5 xl:w-4/6 sm:flex justify-center gap-12 md:p-12 mx-auto bg-primary-green">
     <!-- About Company -->
     <div class="about">
       <h1 class="text-4xl font-medium mb-4">About Us</h1>

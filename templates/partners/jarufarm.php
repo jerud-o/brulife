@@ -25,7 +25,7 @@
    <p class="indent-8">By 2025, Jaru-Farming and Agro-industry Corporation is envisioned to produced high-quality chicken meat locally and internatiolly to address the issues of employment and food shortage supply globally, efficient and effective delivery of services, with the leader of transparency and accountability management.</p>
 </div>
 
-<div class="bg-primary-green md:w-2/3 mx-auto px-2 py-8 text-white mt-10 sm:grid grid-cols-2 sm:gap-8 lg:px-20">
+<div class="bg-primary-green md:w-2/3 mx-auto mb-8 px-2 py-8 text-white mt-10 sm:grid grid-cols-2 sm:gap-8 lg:px-20">
    <div class="mx-auto">
       <h1 class="mb-2 text-xl font-bold">Address</h1>
       <p class="sm:ml-0 ml-5">Barangay Cambitala, Pantabangan, Nueva Ecija</p>
