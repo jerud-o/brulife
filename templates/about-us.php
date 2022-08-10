@@ -1,7 +1,6 @@
 <?php require_once __DIR__ . "/includes/header.php"; ?>
 
 <title>About BRULife</title>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
 <style type="text/css">
     

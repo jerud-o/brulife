@@ -65,7 +65,7 @@
                 lg:w-auto;
         }
         .nav-item > a {
-            @apply hidden px-4 pt-4 pb-2 border-b-[3px] border-b-transparent font-semibold text-center
+            @apply font-['Lato'] hidden px-4 pt-4 pb-2 border-b-[3px] border-b-transparent font-semibold text-center
                 lg:inline-block;
         }
         .nav-menu.focused .nav-item > a,
@@ -102,7 +102,7 @@
             @apply lg:block;
         }
         .dropdown-item > a {
-            @apply block p-4
+            @apply block p-4 font-['Lato']
                 hover:border-l-[4px] hover:border-l-primary-green hover:text-primary-green font-semibold;
         }
         .dropdown-item:not(:last-of-type) > a {
@@ -125,7 +125,7 @@
         }
         /* Navbar Item: Menu Toggle */
         .nav-toggle a {
-            @apply h-full flex items-center px-6 py-4 text-2xl font-semibold
+            @apply h-full flex items-center px-6 py-4 text-2xl font-semibold font-['Lato']
                 md:px-6
                 lg:hidden;
         }
@@ -137,7 +137,7 @@
         }
         footer nav > div:not(.footer-contact) ul a {
             @apply block px-4 py-2
-                hover:bg-primary-green hover:text-white hover:font-medium;
+                hover:bg-primary-green hover:text-white hover:font-medium font-['Lato'];
         }
         footer nav > .footer-contact .button {
             @apply transition-colors duration-300 p-4 border-2 border-primary-green text-primary-green text-center font-bold tracking-widest uppercase
@@ -147,13 +147,13 @@
             @apply flex flex-col;
         }
         footer nav > .footer-contact li:not(:first-of-type) a {
-            @apply transition-colors hover:text-primary-green;
+            @apply transition-colors hover:text-primary-green font-['Lato'];
         }
         footer nav > .footer-contact li:not(:first-of-type) i {
             @apply text-xl text-primary-green;
         }
         footer nav a {
-            @apply block;
+            @apply block font-['Lato'];
         }
         footer > div .links .link-item {
             @apply h-[50px] w-[50px];

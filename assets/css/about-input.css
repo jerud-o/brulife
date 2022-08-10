@@ -63,7 +63,7 @@ section header h3 {
        md:flex-row;
 }
 #values > .card-container-custom > div {
-   @apply min-h-[200px] p-4 flex items-center bg-white rounded-md font-semibold text-xl text-white
+   @apply min-h-[200px] p-4 flex items-center bg-white rounded-md text-justify font-semibold text-xl text-white
        md:min-h-[312px];
 }
 #values > div:first-of-type > div {
@@ -90,7 +90,7 @@ section header h3 {
    @apply bg-bottom md:bg-right;
 }
 #values .medal-item {
-   @apply w-full w-1/2 md:w-1/3 lg:w-1/4 p-4;
+   @apply w-1/2 md:w-1/3 lg:w-1/4 p-4;
 }
 #values .medal-item .graphics {
    @apply flex justify-center;

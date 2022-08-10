@@ -36,10 +36,6 @@
                 </li>
                 <li>
                     <div><i class="fa-solid fa-phone"></i></div>
-                    <p>+63 966 465 6998</p>
-                </li>
-                <li>
-                    <div><i class="fa-solid fa-phone"></i></div>
                     <p>+632 8801 5025</p>
                 </li>
             </div>
@@ -52,7 +48,7 @@
             </div>
             <div class="flex flex-col justify-center text-center md:text-left">
                 <div>
-                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quis eos necessitatibus enim!</p>
+                    <p class="text-sm"><!--BRULife Greatholdings Corporation--></p>
                 </div>
                 <div>
                     <p class="text-xs text-slate-400">Copyright &copy; <?= date("Y"); ?>. <a href="/brulife" tabindex="-1">BRULife Greatholdings Corporation</a> and/or its subsidiaries and affliates. All Rights Reserved.</p>
