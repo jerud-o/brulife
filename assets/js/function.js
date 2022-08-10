@@ -1,7 +1,7 @@
 const toggle = document.querySelector(".nav-toggle");
 const menu = document.querySelector(".nav-menu");
 const items = document.querySelectorAll(".nav-item");
-var url = window.location.pathname;
+var url = window.location.href.split('?')[0];
 var urlRegExp = new RegExp(url.replace(/\/$/,"") + "$");
 // create regexp to match current url pathname and remove trailing slash if present
 // as it could collide with the link in navigation in case trailing slash wasn't present there
@@ -21,6 +21,7 @@ for (let item of items) {
         item.addEventListener("keypress", toggleItem, false);
     }
 }
+
 $(".nav-menu a").each(function(){
     if (urlRegExp.test(this.href.replace(/\/$/,""))) {
         $(this).closest(".nav-item").addClass("active");

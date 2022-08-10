@@ -1,8 +1,6 @@
 <?php require_once __DIR__ . "/includes/header.php"; ?>
 
 <title>BRULife Greatholdings Corporation</title>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-
 <style type="text/css">
     #welcome {
         background:
@@ -49,7 +47,6 @@
         <div class="w-full flex items-center gap-4">
             <div class="ml-auto text-right">
                 <a href="mailto:info@brulifegreatholdings.com">info@brulifegreatholdings.com</a>
-                <p>+63 966 465 6998</p>
                 <p>+632 8801 5025</p>
             </div>
             <img class="h-[50px] sm:h-[75px]" src="assets/img/logo-white.png" alt="logo-white">
@@ -62,7 +59,7 @@
         </a>
         <div class="list">
             <section>
-                <header>Project Investments <a href="<?=APP_ROOT?>projects">See more</a></header>
+                <header>Incoming Projects <a href="<?=APP_ROOT?>projects">See more</a></header>
                 <div class="thin-scrollbar">
                     <?php foreach ($projectArray as $project) : ?>
                         <div class="list-item-custom">
@@ -80,10 +77,8 @@
                 </div>
             </section>
             <section>
-                <header>Future Project Highlights</header>
+                <header>Events/Activities</header>
                 <div class="flex flex-col md:flex-row gap-4 mb-4">
-                    <iframe class="h-[312px] w-full md:w-1/2" src="https://www.youtube.com/embed/J7b1-LU1rwE" title="Malolos, Bulacan: Land Area 15 hectars" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe class="h-[312px] w-full md:w-1/2" src="https://www.youtube.com/embed/ZQt_dyFhCFM" title="DRT Bulacan 305 has construction project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </section>
         </div>
