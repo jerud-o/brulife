@@ -161,6 +161,8 @@
         <p><?=$project->budget?></p>
         <h2>PROJECT DESCRIPTION: </h2>
         <p><?=$project->description?></p>
+        <h2>PROJECT LOCATION: </h2>
+        <p><?=$project->location?></p>
     </div>
 </div>
 

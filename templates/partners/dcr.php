@@ -64,7 +64,7 @@
 
     .custom-btn button:hover {
         color: white;
-        background-color: #7df69f;
+        background-color: hsl(137, 98% , 20%);
     }
 
     /* SM Device */
@@ -180,7 +180,7 @@
 
         .custom-btn button:hover {
             color: white;
-            background-color: #7df69f;
+            background-color: hsl(137, 98% , 20%);
         }
 
     }

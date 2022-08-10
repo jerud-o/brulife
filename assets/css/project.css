@@ -63,11 +63,11 @@
 }
 
 .m-active{
-    color: #018427;
+    color: rgb(68, 246, 118);
 }
 
 .active{
-    color: #7df69f;
+    color: rgb(68, 246, 118);
 }
 
 .filter-list-custom {
@@ -152,8 +152,8 @@
 .btn-custom:active {
     transform: scale(0.9);
     color: white;
-    background-color: #018427;
-    border: 2px solid #018427;
+    background-color: hsl(137, 98% , 20%);
+    border: 2px solid hsl(137, 98% , 20%);
 }
 
 .custom-pagination{
@@ -174,12 +174,12 @@
 }
 
 .custom-pagination a.active{
-    background-color: #018427;
+    background-color: hsl(137, 98% , 20%);
     color: white;
 }
 .custom-pagination a:hover:not(.active) {
-    color: black;
-    background-color: #7df69f;
+    color: white;
+    background-color: hsl(137, 98% , 26%);
 }
 
 .custom-pagination a:first-child {
@@ -246,9 +246,9 @@
     }
 
     .filter-list-custom li:hover {
-        color: #7df69f;
+        color: rgb(68, 246, 118);
         transform: scale(1.1);
-        border-bottom: 2px solid #7df69f;
+        border-bottom: 2px solid rgb(68, 246, 118);
     }
 
     .filter-list-custom li:active {
@@ -312,8 +312,8 @@
 
     .btn-custom:hover {
         color: white;
-        border: 2px solid #018427;
-        background-color: #018427;
+        border: 2px solid hsl(137, 98% , 20%);
+        background-color: hsl(137, 98% , 20%);
     }
 
     .btn-custom:active {
