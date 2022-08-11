@@ -29,7 +29,13 @@
                 </ul>
             </li>
             <li class="nav-item"><a href="<?= APP_ROOT ?>careers">Careers</a></li>
-            <li class="nav-item"><a href="<?= APP_ROOT ?>media">Entertainment & Media</a></li>
+            <li class="nav-item dropdown">
+                <a tabindex="0">Entertainment & Media</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="<?= APP_ROOT ?>media-bru">BRU Digital TV</a></li>
+                    <li class="dropdown-item"><a href="<?= APP_ROOT ?>media-ufp">Unlimited Films Production</a></li>
+                </ul>
+            </li>
             <li class="nav-item dropdown">
                 <a tabindex="0">About</a>
                 <ul class="dropdown-menu">

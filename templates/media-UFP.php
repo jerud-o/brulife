@@ -20,7 +20,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat eius natus sunt aliquam. Suscipit fuga repellendus facilis non ut ullam inventore voluptas. Beatae, totam? Similique necessitatibus natus accusamus sint optio!</p>
             </div>
         </div>
-        <a href="https://www.youtube.com/channel/UCfZ4kY2ve7yy7u0v5hCOOwA" target="_blank"><button class="custom-button-style custom-button">Visit Youtube Channel</button></a>
+        <a href="https://www.youtube.com/channel/UCfZ4kY2ve7yy7u0v5hCOOwA" target="_blank"><button class="custom-button-style custom-button2">Visit Youtube Channel</button></a>
     </div>
 
     <div class="custom-caption">
