@@ -6,6 +6,7 @@ class Project {
     public $dateStart;
     public $budget;
     public $description;
+    public $location;
     public $imagePath;
     public $tags;
 
@@ -16,6 +17,7 @@ class Project {
         $this->dateStart = date("d F, Y", strtotime($item['DateStart']));
         $this->budget = ($item['Budget'] === floatval(0)) ? "No budget planned yet." : ("&#8369; " . $item['Budget']);
         $this->description = (!empty($item['Description'])) ? $item['Description'] : "No description found.";
+        $this->location = (!empty($item['Location'])) ? $item['Location'] : "No location yet.";
         $this->imagePath = $item['ImagePath'];
         $this->tags = explode(",", $item['Tag']);
     }

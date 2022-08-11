@@ -40,7 +40,7 @@ if (!$requestFromAPI) {
                     break;
                 case "brucgt":
                     include_once $baseDir . "brucgt.php";
-                    break;   
+                    break;
                 default:
                     header("Location: " . APP_ROOT . "404");
                     exit();
@@ -50,7 +50,13 @@ if (!$requestFromAPI) {
             include_once $baseDir . "careers.php";
             break;
         case $uri[$baseIndex] === "media":
-            include_once $baseDir . "media.php";
+            include_once $baseDir . "media-UFP.php";
+            break;
+        case $uri[$baseIndex] === "media-bru":
+            include_once $baseDir . "media-BRUTV.php";
+            break;
+        case $uri[$baseIndex] === "media-ufp":
+            include_once $baseDir . "media-UFP.php";
             break;
         case $uri[$baseIndex] === "about":
             include_once $baseDir . "about-us.php";
@@ -75,4 +81,3 @@ if (!$requestFromAPI) {
             exit();
     }
 }
-?>
