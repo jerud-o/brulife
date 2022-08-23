@@ -71,7 +71,7 @@
     }
 </style>
 
-<link href="<?= APP_ROOT . 'assets/css/about-output.css?' . uniqid() ?>" rel="stylesheet">
+<link href="<?= APP_ROOT . 'assets/css/about.css?' . uniqid() ?>" rel="stylesheet">
 <script>
     document.addEventListener("DOMContentLoaded", function(event) {
         var elements = document.querySelectorAll("#about .row"),
