@@ -18,7 +18,7 @@
     .thin-scrollbar::-webkit-scrollbar-thumb { background-color: rgb(179, 179, 179); border-radius: 3px; }
    
 </style>
- <link href="<?= APP_ROOT . 'assets/css/home-output.css?' . uniqid() ?>" rel="stylesheet">
+ <link href="<?= APP_ROOT . 'assets/css/home.css?' . uniqid() ?>" rel="stylesheet">
 <script>
     document.addEventListener("DOMContentLoaded", function(event) {
         document.getElementById("btn-scroll-project").addEventListener("click", function(e) {

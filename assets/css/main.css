@@ -551,11 +551,11 @@ video {
 .left-1 {
   left: 0.25rem;
 }
-.left-0 {
-  left: 0px;
-}
 .top-3 {
   top: 0.75rem;
+}
+.left-0 {
+  left: 0px;
 }
 .top-2 {
   top: 0.5rem;
@@ -725,14 +725,11 @@ video {
 .h-\[275px\] {
   height: 275px;
 }
-.h-\[80px\] {
-  height: 80px;
+.h-1 {
+  height: 0.25rem;
 }
 .h-auto {
   height: auto;
-}
-.h-1 {
-  height: 0.25rem;
 }
 .h-72 {
   height: 18rem;
@@ -777,9 +774,6 @@ video {
 }
 .w-\[275px\] {
   width: 275px;
-}
-.w-\[50px\] {
-  width: 50px;
 }
 .w-11 {
   width: 2.75rem;
@@ -949,9 +943,6 @@ video {
 }
 .border-b-\[1px\] {
   border-bottom-width: 1px;
-}
-.border-b-\[3px\] {
-  border-bottom-width: 3px;
 }
 .border-b-2 {
   border-bottom-width: 2px;
@@ -1720,23 +1711,9 @@ video {
   width: 50px;
 }
         /*  */
-        .hover\:border-l-\[4px\]:hover {
-  border-left-width: 4px;
-}
-        .hover\:border-l-primary-green:hover {
-  --tw-border-opacity: 1;
-  border-left-color: hsl(135 100% 27% / var(--tw-border-opacity));
-}
         .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-        .hover\:bg-primary-green:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(135 100% 27% / var(--tw-bg-opacity));
-}
-        .hover\:font-medium:hover {
-  font-weight: 500;
 }
         .hover\:text-primary-green:hover {
   --tw-text-opacity: 1;
@@ -1750,14 +1727,6 @@ video {
   --tw-text-opacity: 1;
   color: rgb(0 172 238 / var(--tw-text-opacity));
 }
-        .hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-        .focus\:border-slate-600:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(71 85 105 / var(--tw-border-opacity));
-}
         @media (min-width: 640px) {
 
   .sm\:mb-4 {
@@ -1768,20 +1737,12 @@ video {
     margin-left: 0px;
   }
 
-  .sm\:block {
-    display: block;
-  }
-
   .sm\:flex {
     display: flex;
   }
 
   .sm\:grid {
     display: grid;
-  }
-
-  .sm\:hidden {
-    display: none;
   }
 
   .sm\:h-\[75px\] {
@@ -1971,11 +1932,6 @@ video {
     padding: 3rem;
   }
 
-  .md\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
   .md\:text-left {
     text-align: left;
   }
@@ -2006,18 +1962,6 @@ video {
 
   .lg\:static {
     position: static;
-  }
-
-  .lg\:absolute {
-    position: absolute;
-  }
-
-  .lg\:top-full {
-    top: 100%;
-  }
-
-  .lg\:right-0 {
-    right: 0px;
   }
 
   .lg\:my-12 {
@@ -2075,14 +2019,6 @@ video {
 
   .lg\:w-1\/4 {
     width: 25%;
-  }
-
-  .lg\:w-1\/2 {
-    width: 50%;
-  }
-
-  .lg\:w-\[200\%\] {
-    width: 200%;
   }
 
   .lg\:flex-row {
