@@ -1,5 +1,4 @@
 <?php require_once __DIR__ . "/../includes/header.php"; ?>
-<!-- <link href="../../assets/css/output.css? <?= uniqid() ?>" rel="stylesheet"> -->
 <?php require_once __DIR__ . "/../includes/navbar.php"; ?>
 
 <div class="w-2/3 lg:w-2/5 rounded-[100%] mx-auto bg-primary-green border-4 border-yellow-300">
