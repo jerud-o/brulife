@@ -1,0 +1,103 @@
+* {
+    @apply font-['Lato'];
+ }
+ section header h3 {
+    @apply pb-4 text-center text-5xl font-black tracking-wider uppercase;
+ }
+ #about header h3 {
+    @apply pt-8;
+ }
+ #about > div {
+    @apply md:my-6;
+ }
+ #about p {
+    @apply m-4;
+ }
+ #about > .row {
+    @apply flex overflow-x-hidden;
+ }
+ #about .row [class|="info"] {
+    @apply w-full flex flex-col justify-center
+        md:p-4 md:w-7/12;
+ }
+ #about .row [class|="info"] > div {
+    @apply px-4 bg-white shadow-lg
+        md:py-4 md:border-b-2 md:border-b-primary-green md:rounded-md;
+ }
+ #about .row:nth-of-type(2) [class|="info"] p:first-of-type {
+    @apply mt-0 md:mt-4;
+ }
+ #about .row .graphics {
+    @apply relative hidden p-4 h-[60vh] justify-center items-center
+        md:flex md:w-5/12;
+ }
+ #about .row .graphics > div:not([class|="accent"]) {
+    @apply flex items-center h-full w-full z-10;
+ }
+ #about .row .graphics img {
+    @apply h-[75%] w-auto rounded-md object-contain;
+ }
+ #about .row .graphics > div[class|="accent"] {
+    @apply absolute top-0 h-full w-2/4 bg-primary-green;
+ }
+ #about .accent-left {
+    @apply left-0 rounded-r-md;
+ }
+ #about .accent-right {
+    @apply right-0 rounded-l-md;
+ }
+ #about > .partners {
+    @apply p-4 bg-top bg-cover shadow-lg;
+ }
+ #about > .partners p {
+    @apply p-4 text-white text-center text-lg font-medium;
+ }
+ #about > .partners .graphics {
+    @apply m-6 flex flex-wrap justify-center items-center gap-8;
+ }
+ #values header h3 {
+    @apply pt-12;
+ }
+ #values > .card-container-custom {
+    @apply p-4 flex flex-col justify-center gap-4
+        md:flex-row;
+ }
+ #values > .card-container-custom > div {
+    @apply min-h-[200px] p-4 flex items-center bg-white rounded-md text-justify font-semibold text-xl text-white
+        md:min-h-[312px];
+ }
+ #values > div:first-of-type > div {
+    @apply w-full bg-[length:auto_300%]
+        md:bg-[length:300%_auto] md:w-1/3;
+ }
+ #values > div:first-of-type > div:nth-of-type(1) {
+    @apply bg-top md:bg-left;
+ }
+ #values > div:first-of-type > div:nth-of-type(2) {
+    @apply bg-center;
+ }
+ #values > div:first-of-type > div:nth-of-type(3) {
+    @apply bg-bottom md:bg-right;
+ }
+ #values > div:nth-of-type(2) > div {
+    @apply w-full bg-[length:auto_200%]
+        md:bg-[length:200%_auto] md:w-1/3;
+ }
+ #values > div:nth-of-type(2) > div:nth-of-type(1) {
+    @apply bg-top md:bg-left;
+ }
+ #values > div:nth-of-type(2) > div:nth-of-type(2) {
+    @apply bg-bottom md:bg-right;
+ }
+ #values .medal-item {
+    @apply w-1/2 md:w-1/3 lg:w-1/4 p-4;
+ }
+ #values .medal-item .graphics {
+    @apply flex justify-center;
+ }
+ #values .medal-item .graphics img {
+    @apply h-auto w-1/2;
+ }
+ #values .medal-item .info p {
+    @apply block text-center font-medium;
+ }

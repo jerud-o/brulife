@@ -1,0 +1,46 @@
+* {
+    @apply font-['Lato'];
+ }
+ section header h3 {
+    @apply pt-8 pb-4 text-center text-5xl font-black tracking-wider;
+ }
+ #directors > div {
+    @apply p-4 flex flex-wrap justify-evenly;
+ }
+ #directors .card-custom .graphics {
+    @apply h-[312px] w-[312px] relative;
+ }
+ #directors .card-custom .graphics:hover::after {
+    @apply opacity-100;
+ }
+ #directors .card-custom .graphics::after {
+    @apply transition-opacity duration-300 opacity-0 absolute h-1/4 w-full content-[''] top-3/4 bg-gradient-to-t from-[#000000cc]
+ }
+ #directors .card-custom .graphics img {
+    @apply h-[312px] w-auto border-[1px] border-neutral-300 rounded-md object-cover;
+ }
+ #directors .card-custom .graphics .offset {
+    @apply absolute p-4 w-full right-0 bottom-0 text-lg z-10;
+ }
+ #directors .card-custom .links {
+    @apply flex gap-2;
+ }
+ #directors .card-custom a {
+    @apply transition-all duration-100 flex items-center px-[0.5rem] py-[0.5rem] bg-white rounded-full text-sm
+        hover:bg-slate-50;
+ }
+ #directors .card-custom .link-item:nth-of-type(1) a { @apply hover:text-[#4267B2]; }
+ #directors .card-custom .link-item:nth-of-type(2) a { @apply hover:text-[#00acee]; }
+ #directors .card-custom .link-item:nth-of-type(3) a { @apply hover:text-primary-green; }
+ #directors .card-custom .graphics:hover a {
+    @apply px-[0.6rem] py-[0.6rem] text-lg;
+ }
+ #directors .card-custom .info {
+    @apply text-center my-2;
+ }
+ #directors .card-custom .info h4 {
+    @apply text-lg font-semibold;
+ }
+ #directors .card-custom .info p {
+    @apply text-sm text-neutral-400 font-light;
+ }

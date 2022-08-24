@@ -2,7 +2,7 @@
 
 <script src="assets/js/dropdown.js"></script>
 <link rel="stylesheet" href="assets/css/project.css">
-<link rel="stylesheet" href="assets/css/output.css">
+<link rel="stylesheet" href="assets/css/main.css">
 <link rel="icon" href="assets/img/icon-banner.png">
 <title>Upcoming Projects</title>
 
