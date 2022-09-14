@@ -163,16 +163,16 @@ switch (true) {
                     //Server settings
                     // $mail->SMTPDebug = SMTP::DEBUG_SERVER;
                     $mail->isSMTP();
-                    $mail->Host       = "smtp.gmail.com";
+                    $mail->Host       = "brulifegreatholdings.com";
                     $mail->SMTPAuth   = true;
-                    $mail->Username   = 'csdmail.north@gmail.com';
-                    $mail->Password   = 'vaonblwwblocomdu';
+                    $mail->Username   = 'info@brulifegreatholdings.com';
+                    $mail->Password   = 'info@brulife2022';
                     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-                    $mail->Port       = 587;
+                    $mail->Port       = 465;
 
                     //Recipients
-                    $mail->setFrom("csdmail.north@gmail.com", "CSD e-MAIL");
-                    $mail->addReplyTo("csdmail.north@gmail.com");
+                    $mail->setFrom("info@brulifegreatholdings.com", "BRULife Great Holdings Corporation");
+                    $mail->addReplyTo("info@brulifegreatholdings.com");
                     $mail->addAddress($_POST['email']);
 
                     //Content
