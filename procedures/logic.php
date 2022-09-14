@@ -166,7 +166,7 @@ switch (true) {
                     $mail->Host       = "brulifegreatholdings.com";
                     $mail->SMTPAuth   = true;
                     $mail->Username   = 'info@brulifegreatholdings.com';
-                    $mail->Password   = 'info@brulife2022';
+                    $mail->Password   = 'Password';
                     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                     $mail->Port       = 465;
 
