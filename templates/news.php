@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <p>BRULife</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius autem est ratione sint et eos. Voluptas ratione distinctio odit natus et quidem provident maiores. Voluptatum inventore blanditiis totam esse sunt.</p>
 </body>
 </html>
